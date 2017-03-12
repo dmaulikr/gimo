@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4F783231E75F213008B43B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783221E75F213008B43B5 /* main.m */; };
+		A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783251E75F213008B43B5 /* AppDelegate.m */; };
+		A4F783291E75F213008B43B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783281E75F213008B43B5 /* ViewController.m */; };
+		A4F7832C1E75F213008B43B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F7832A1E75F213008B43B5 /* Main.storyboard */; };
+		A4F7832E1E75F213008B43B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F7832D1E75F213008B43B5 /* Assets.xcassets */; };
+		A4F783311E75F213008B43B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F7832F1E75F213008B43B5 /* LaunchScreen.storyboard */; };
+		A4F783361E75F214008B43B5 /* gimo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A4F783351E75F214008B43B5 /* gimo WatchKit App.app */; };
+		A4F7833C1E75F214008B43B5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F7833A1E75F214008B43B5 /* Interface.storyboard */; };
+		A4F7833E1E75F214008B43B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F7833D1E75F214008B43B5 /* Assets.xcassets */; };
+		A4F783451E75F214008B43B5 /* gimo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4F783441E75F214008B43B5 /* gimo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4F7834D1E75F214008B43B5 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F7834C1E75F214008B43B5 /* InterfaceController.m */; };
+		A4F783501E75F214008B43B5 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F7834F1E75F214008B43B5 /* ExtensionDelegate.m */; };
+		A4F783531E75F214008B43B5 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783521E75F214008B43B5 /* NotificationController.m */; };
+		A4F783551E75F214008B43B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F783541E75F214008B43B5 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4F783371E75F214008B43B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4F783161E75F213008B43B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4F783341E75F213008B43B5;
+			remoteInfo = "gimo WatchKit App";
+		};
+		A4F783461E75F214008B43B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4F783161E75F213008B43B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4F783431E75F214008B43B5;
+			remoteInfo = "gimo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4F7835C1E75F214008B43B5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4F783451E75F214008B43B5 /* gimo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F783601E75F214008B43B5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A4F783361E75F214008B43B5 /* gimo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A4F7831E1E75F213008B43B5 /* gimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F783221E75F213008B43B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4F783241E75F213008B43B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4F783251E75F213008B43B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4F783271E75F213008B43B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A4F783281E75F213008B43B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A4F7832B1E75F213008B43B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4F7832D1E75F213008B43B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4F783301E75F213008B43B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4F783321E75F213008B43B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F783351E75F214008B43B5 /* gimo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gimo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F7833B1E75F214008B43B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A4F7833D1E75F214008B43B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4F7833F1E75F214008B43B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F783441E75F214008B43B5 /* gimo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "gimo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F7834A1E75F214008B43B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A4F7834B1E75F214008B43B5 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		A4F7834C1E75F214008B43B5 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		A4F7834E1E75F214008B43B5 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		A4F7834F1E75F214008B43B5 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		A4F783511E75F214008B43B5 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		A4F783521E75F214008B43B5 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		A4F783541E75F214008B43B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4F783561E75F214008B43B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4F7831B1E75F213008B43B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F783411E75F214008B43B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4F783151E75F213008B43B5 = {
+			isa = PBXGroup;
+			children = (
+				A4F783201E75F213008B43B5 /* gimo */,
+				A4F783391E75F214008B43B5 /* gimo WatchKit App */,
+				A4F783481E75F214008B43B5 /* gimo WatchKit Extension */,
+				A4F7831F1E75F213008B43B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4F7831F1E75F213008B43B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4F7831E1E75F213008B43B5 /* gimo.app */,
+				A4F783351E75F214008B43B5 /* gimo WatchKit App.app */,
+				A4F783441E75F214008B43B5 /* gimo WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4F783201E75F213008B43B5 /* gimo */ = {
+			isa = PBXGroup;
+			children = (
+				A4F783271E75F213008B43B5 /* ViewController.h */,
+				A4F783281E75F213008B43B5 /* ViewController.m */,
+				A4F7832A1E75F213008B43B5 /* Main.storyboard */,
+				A4F7832D1E75F213008B43B5 /* Assets.xcassets */,
+				A4F7832F1E75F213008B43B5 /* LaunchScreen.storyboard */,
+				A4F783321E75F213008B43B5 /* Info.plist */,
+				A4F783211E75F213008B43B5 /* Supporting Files */,
+			);
+			path = gimo;
+			sourceTree = "<group>";
+		};
+		A4F783211E75F213008B43B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4F783241E75F213008B43B5 /* AppDelegate.h */,
+				A4F783251E75F213008B43B5 /* AppDelegate.m */,
+				A4F783221E75F213008B43B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4F783391E75F214008B43B5 /* gimo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A4F7833A1E75F214008B43B5 /* Interface.storyboard */,
+				A4F7833D1E75F214008B43B5 /* Assets.xcassets */,
+				A4F7833F1E75F214008B43B5 /* Info.plist */,
+			);
+			path = "gimo WatchKit App";
+			sourceTree = "<group>";
+		};
+		A4F783481E75F214008B43B5 /* gimo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A4F7834B1E75F214008B43B5 /* InterfaceController.h */,
+				A4F7834C1E75F214008B43B5 /* InterfaceController.m */,
+				A4F7834E1E75F214008B43B5 /* ExtensionDelegate.h */,
+				A4F7834F1E75F214008B43B5 /* ExtensionDelegate.m */,
+				A4F783511E75F214008B43B5 /* NotificationController.h */,
+				A4F783521E75F214008B43B5 /* NotificationController.m */,
+				A4F783541E75F214008B43B5 /* Assets.xcassets */,
+				A4F783561E75F214008B43B5 /* Info.plist */,
+				A4F783491E75F214008B43B5 /* Supporting Files */,
+			);
+			path = "gimo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A4F783491E75F214008B43B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4F7834A1E75F214008B43B5 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4F7831D1E75F213008B43B5 /* gimo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F783611E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo" */;
+			buildPhases = (
+				A4F7831A1E75F213008B43B5 /* Sources */,
+				A4F7831B1E75F213008B43B5 /* Frameworks */,
+				A4F7831C1E75F213008B43B5 /* Resources */,
+				A4F783601E75F214008B43B5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4F783381E75F214008B43B5 /* PBXTargetDependency */,
+			);
+			name = gimo;
+			productName = gimo;
+			productReference = A4F7831E1E75F213008B43B5 /* gimo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4F783341E75F213008B43B5 /* gimo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F7835D1E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit App" */;
+			buildPhases = (
+				A4F783331E75F213008B43B5 /* Resources */,
+				A4F7835C1E75F214008B43B5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4F783471E75F214008B43B5 /* PBXTargetDependency */,
+			);
+			name = "gimo WatchKit App";
+			productName = "gimo WatchKit App";
+			productReference = A4F783351E75F214008B43B5 /* gimo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A4F783431E75F214008B43B5 /* gimo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F783591E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit Extension" */;
+			buildPhases = (
+				A4F783401E75F214008B43B5 /* Sources */,
+				A4F783411E75F214008B43B5 /* Frameworks */,
+				A4F783421E75F214008B43B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gimo WatchKit Extension";
+			productName = "gimo WatchKit Extension";
+			productReference = A4F783441E75F214008B43B5 /* gimo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4F783161E75F213008B43B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Cyrus Goh";
+				TargetAttributes = {
+					A4F7831D1E75F213008B43B5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E6L7FGM9UX;
+						ProvisioningStyle = Automatic;
+					};
+					A4F783341E75F213008B43B5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E6L7FGM9UX;
+						ProvisioningStyle = Automatic;
+					};
+					A4F783431E75F214008B43B5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E6L7FGM9UX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A4F783191E75F213008B43B5 /* Build configuration list for PBXProject "gimo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4F783151E75F213008B43B5;
+			productRefGroup = A4F7831F1E75F213008B43B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4F7831D1E75F213008B43B5 /* gimo */,
+				A4F783341E75F213008B43B5 /* gimo WatchKit App */,
+				A4F783431E75F214008B43B5 /* gimo WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4F7831C1E75F213008B43B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F783311E75F213008B43B5 /* LaunchScreen.storyboard in Resources */,
+				A4F7832E1E75F213008B43B5 /* Assets.xcassets in Resources */,
+				A4F7832C1E75F213008B43B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F783331E75F213008B43B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F7833E1E75F214008B43B5 /* Assets.xcassets in Resources */,
+				A4F7833C1E75F214008B43B5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F783421E75F214008B43B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F783551E75F214008B43B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4F7831A1E75F213008B43B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F783291E75F213008B43B5 /* ViewController.m in Sources */,
+				A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */,
+				A4F783231E75F213008B43B5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F783401E75F214008B43B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F783501E75F214008B43B5 /* ExtensionDelegate.m in Sources */,
+				A4F7834D1E75F214008B43B5 /* InterfaceController.m in Sources */,
+				A4F783531E75F214008B43B5 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4F783381E75F214008B43B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4F783341E75F213008B43B5 /* gimo WatchKit App */;
+			targetProxy = A4F783371E75F214008B43B5 /* PBXContainerItemProxy */;
+		};
+		A4F783471E75F214008B43B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4F783431E75F214008B43B5 /* gimo WatchKit Extension */;
+			targetProxy = A4F783461E75F214008B43B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4F7832A1E75F213008B43B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4F7832B1E75F213008B43B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4F7832F1E75F213008B43B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4F783301E75F213008B43B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A4F7833A1E75F214008B43B5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4F7833B1E75F214008B43B5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4F783571E75F214008B43B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A4F783581E75F214008B43B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4F7835A1E75F214008B43B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = E6L7FGM9UX;
+				INFOPLIST_FILE = "gimo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A4F7835B1E75F214008B43B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = E6L7FGM9UX;
+				INFOPLIST_FILE = "gimo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A4F7835E1E75F214008B43B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E6L7FGM9UX;
+				IBSC_MODULE = gimo_WatchKit_Extension;
+				INFOPLIST_FILE = "gimo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A4F7835F1E75F214008B43B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E6L7FGM9UX;
+				IBSC_MODULE = gimo_WatchKit_Extension;
+				INFOPLIST_FILE = "gimo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A4F783621E75F214008B43B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E6L7FGM9UX;
+				INFOPLIST_FILE = gimo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A4F783631E75F214008B43B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E6L7FGM9UX;
+				INFOPLIST_FILE = gimo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4F783191E75F213008B43B5 /* Build configuration list for PBXProject "gimo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F783571E75F214008B43B5 /* Debug */,
+				A4F783581E75F214008B43B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F783591E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F7835A1E75F214008B43B5 /* Debug */,
+				A4F7835B1E75F214008B43B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4F7835D1E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F7835E1E75F214008B43B5 /* Debug */,
+				A4F7835F1E75F214008B43B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4F783611E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F783621E75F214008B43B5 /* Debug */,
+				A4F783631E75F214008B43B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4F783161E75F213008B43B5 /* Project object */;
+}
