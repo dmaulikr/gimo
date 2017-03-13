@@ -6,7 +6,7 @@ target 'gimo' do
   # use_frameworks!
 
   # Pods for gimo
-  pod 'Firebase/Core'
+  pod 'Lock', '~> 1.28'
 
 end
 

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4594C85B3AE2A431A40AD4A1 /* libPods-gimo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DFC13EB4559DC41006A813 /* libPods-gimo.a */; };
-		65CAD4FDE394B5BE0F645EE7 /* libPods-gimo WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0494A1F2636EFCACCB4E4088 /* libPods-gimo WatchKit Extension.a */; };
+		72305AB887EBF0C65438206F /* libPods-gimo WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EC5D391E50B292C3741AD4 /* libPods-gimo WatchKit Extension.a */; };
+		A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEF71E76115900C21730 /* HomeViewController.m */; };
+		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
+		A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDEEFC1E7615BB00C21730 /* libLock.a */; };
 		A4F783231E75F213008B43B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783221E75F213008B43B5 /* main.m */; };
 		A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783251E75F213008B43B5 /* AppDelegate.m */; };
 		A4F783291E75F213008B43B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783281E75F213008B43B5 /* ViewController.m */; };
@@ -23,8 +25,8 @@
 		A4F783501E75F214008B43B5 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F7834F1E75F214008B43B5 /* ExtensionDelegate.m */; };
 		A4F783531E75F214008B43B5 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783521E75F214008B43B5 /* NotificationController.m */; };
 		A4F783551E75F214008B43B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F783541E75F214008B43B5 /* Assets.xcassets */; };
-		A4F783651E75F636008B43B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4F783641E75F636008B43B5 /* GoogleService-Info.plist */; };
-		CC6DDD5874B37B25A23C0803 /* libPods-gimo WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A94694B1656A293449FC3DA6 /* libPods-gimo WatchKit App.a */; };
+		AE5AAC9D6BD555F47619F548 /* libPods-gimo WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E75A6540DC47F1835791CF3 /* libPods-gimo WatchKit App.a */; };
+		B325402BAA5D9DB62E58DB74 /* libPods-gimo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C300340CD731CBE9C2975D /* libPods-gimo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +72,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0494A1F2636EFCACCB4E4088 /* libPods-gimo WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77DB87B87657D35369E44B6D /* Pods-gimo WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		78B898FEEFC6DC2DB11D1A4C /* Pods-gimo WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		8204670C575513A4973ABE69 /* Pods-gimo WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		6BA2B12ABE6CB45ACA3D097A /* Pods-gimo WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		7C75B3CF38E1EF4AF81EE6A3 /* Pods-gimo WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		824CA21DB7D36B997B1A23DB /* Pods-gimo WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		9E75A6540DC47F1835791CF3 /* libPods-gimo WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EDEEF61E76115900C21730 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A4EDEEF71E76115900C21730 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A4EDEEF91E76116900C21730 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		A4EDEEFA1E76116900C21730 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		A4EDEEFC1E7615BB00C21730 /* libLock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLock.a; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/Lock/libLock.a"; sourceTree = "<group>"; };
 		A4F7831E1E75F213008B43B5 /* gimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F783221E75F213008B43B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4F783241E75F213008B43B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,12 +105,11 @@
 		A4F783521E75F214008B43B5 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		A4F783541E75F214008B43B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F783561E75F214008B43B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4F783641E75F636008B43B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A94694B1656A293449FC3DA6 /* libPods-gimo WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9DA7059D106B2F3160D8483 /* Pods-gimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.debug.xcconfig"; sourceTree = "<group>"; };
-		B0DFC13EB4559DC41006A813 /* libPods-gimo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B10621610420CBDA58287829 /* Pods-gimo WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		E3B3CAA3EA4C09A965529AED /* Pods-gimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.release.xcconfig"; sourceTree = "<group>"; };
+		B1C300340CD731CBE9C2975D /* libPods-gimo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B7A84D9AFA303F0C9ADF38 /* Pods-gimo WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		C7361B34A57FDD19462637A1 /* Pods-gimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.release.xcconfig"; sourceTree = "<group>"; };
+		CD42F9917563C33953D74F84 /* Pods-gimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.debug.xcconfig"; sourceTree = "<group>"; };
+		D2EC5D391E50B292C3741AD4 /* libPods-gimo WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6DDD5874B37B25A23C0803 /* libPods-gimo WatchKit App.a in Frameworks */,
+				AE5AAC9D6BD555F47619F548 /* libPods-gimo WatchKit App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4594C85B3AE2A431A40AD4A1 /* libPods-gimo.a in Frameworks */,
+				A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */,
+				B325402BAA5D9DB62E58DB74 /* libPods-gimo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,34 +134,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65CAD4FDE394B5BE0F645EE7 /* libPods-gimo WatchKit Extension.a in Frameworks */,
+				72305AB887EBF0C65438206F /* libPods-gimo WatchKit Extension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29C3D61F9B8D3B8F2A7A7DD2 /* Pods */ = {
+		14020BB957098A8AC0D7A4F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A9DA7059D106B2F3160D8483 /* Pods-gimo.debug.xcconfig */,
-				E3B3CAA3EA4C09A965529AED /* Pods-gimo.release.xcconfig */,
-				8204670C575513A4973ABE69 /* Pods-gimo WatchKit App.debug.xcconfig */,
-				78B898FEEFC6DC2DB11D1A4C /* Pods-gimo WatchKit App.release.xcconfig */,
-				77DB87B87657D35369E44B6D /* Pods-gimo WatchKit Extension.debug.xcconfig */,
-				B10621610420CBDA58287829 /* Pods-gimo WatchKit Extension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		370C633DD1571ABED6860EE5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B0DFC13EB4559DC41006A813 /* libPods-gimo.a */,
-				A94694B1656A293449FC3DA6 /* libPods-gimo WatchKit App.a */,
-				0494A1F2636EFCACCB4E4088 /* libPods-gimo WatchKit Extension.a */,
+				A4EDEEFC1E7615BB00C21730 /* libLock.a */,
+				B1C300340CD731CBE9C2975D /* libPods-gimo.a */,
+				9E75A6540DC47F1835791CF3 /* libPods-gimo WatchKit App.a */,
+				D2EC5D391E50B292C3741AD4 /* libPods-gimo WatchKit Extension.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		572A2F6ED41D7E5F527212F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD42F9917563C33953D74F84 /* Pods-gimo.debug.xcconfig */,
+				C7361B34A57FDD19462637A1 /* Pods-gimo.release.xcconfig */,
+				B5B7A84D9AFA303F0C9ADF38 /* Pods-gimo WatchKit App.debug.xcconfig */,
+				7C75B3CF38E1EF4AF81EE6A3 /* Pods-gimo WatchKit App.release.xcconfig */,
+				824CA21DB7D36B997B1A23DB /* Pods-gimo WatchKit Extension.debug.xcconfig */,
+				6BA2B12ABE6CB45ACA3D097A /* Pods-gimo WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A4F783151E75F213008B43B5 = {
@@ -164,8 +172,8 @@
 				A4F783391E75F214008B43B5 /* gimo WatchKit App */,
 				A4F783481E75F214008B43B5 /* gimo WatchKit Extension */,
 				A4F7831F1E75F213008B43B5 /* Products */,
-				29C3D61F9B8D3B8F2A7A7DD2 /* Pods */,
-				370C633DD1571ABED6860EE5 /* Frameworks */,
+				14020BB957098A8AC0D7A4F8 /* Frameworks */,
+				572A2F6ED41D7E5F527212F6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,13 +190,16 @@
 		A4F783201E75F213008B43B5 /* gimo */ = {
 			isa = PBXGroup;
 			children = (
+				A4EDEEF61E76115900C21730 /* HomeViewController.h */,
+				A4EDEEF71E76115900C21730 /* HomeViewController.m */,
+				A4EDEEF91E76116900C21730 /* ProfileViewController.h */,
+				A4EDEEFA1E76116900C21730 /* ProfileViewController.m */,
 				A4F783271E75F213008B43B5 /* ViewController.h */,
 				A4F783281E75F213008B43B5 /* ViewController.m */,
 				A4F7832A1E75F213008B43B5 /* Main.storyboard */,
 				A4F7832D1E75F213008B43B5 /* Assets.xcassets */,
 				A4F7832F1E75F213008B43B5 /* LaunchScreen.storyboard */,
 				A4F783321E75F213008B43B5 /* Info.plist */,
-				A4F783641E75F636008B43B5 /* GoogleService-Info.plist */,
 				A4F783211E75F213008B43B5 /* Supporting Files */,
 			);
 			path = gimo;
@@ -245,13 +256,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F783611E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo" */;
 			buildPhases = (
-				84262A86B83A05BFD2E77BB2 /* [CP] Check Pods Manifest.lock */,
+				39012F393F435AB41542E51E /* [CP] Check Pods Manifest.lock */,
 				A4F7831A1E75F213008B43B5 /* Sources */,
 				A4F7831B1E75F213008B43B5 /* Frameworks */,
 				A4F7831C1E75F213008B43B5 /* Resources */,
 				A4F783601E75F214008B43B5 /* Embed Watch Content */,
-				0389504D90D1C38B5A6B197F /* [CP] Embed Pods Frameworks */,
-				6480785A6CFC2CFB96E5EF8A /* [CP] Copy Pods Resources */,
+				E3158A7FF8D2E066FE18EF78 /* [CP] Embed Pods Frameworks */,
+				F17CD0E7F485776B3677252F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,11 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F7835D1E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit App" */;
 			buildPhases = (
-				6A415EC214BB4D64AE064C92 /* [CP] Check Pods Manifest.lock */,
+				65B5DF0B91EAD3F94201521F /* [CP] Check Pods Manifest.lock */,
 				A4F783331E75F213008B43B5 /* Resources */,
 				A4F7835C1E75F214008B43B5 /* Embed App Extensions */,
 				2883F1FF6D7AB9048D4760FE /* Frameworks */,
-				6F97A631B59ED0B54062A304 /* [CP] Copy Pods Resources */,
+				612C0CC286D97AF16F465722 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,12 +298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F783591E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit Extension" */;
 			buildPhases = (
-				4859E06A6158BA2D09070802 /* [CP] Check Pods Manifest.lock */,
+				84F5E522A9368753B395E9A2 /* [CP] Check Pods Manifest.lock */,
 				A4F783401E75F214008B43B5 /* Sources */,
 				A4F783411E75F214008B43B5 /* Frameworks */,
 				A4F783421E75F214008B43B5 /* Resources */,
-				BBFE0877DD6A1AC40CD31FCB /* [CP] Embed Pods Frameworks */,
-				F2F5B4B1079F9AFAE6B32697 /* [CP] Copy Pods Resources */,
+				E9705C2190FD5843B709CD0B /* [CP] Embed Pods Frameworks */,
+				B267477C474BAA336210D6CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,7 +366,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4F783311E75F213008B43B5 /* LaunchScreen.storyboard in Resources */,
-				A4F783651E75F636008B43B5 /* GoogleService-Info.plist in Resources */,
 				A4F7832E1E75F213008B43B5 /* Assets.xcassets in Resources */,
 				A4F7832C1E75F213008B43B5 /* Main.storyboard in Resources */,
 			);
@@ -381,22 +391,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0389504D90D1C38B5A6B197F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo/Pods-gimo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4859E06A6158BA2D09070802 /* [CP] Check Pods Manifest.lock */ = {
+		39012F393F435AB41542E51E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,37 +406,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6480785A6CFC2CFB96E5EF8A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo/Pods-gimo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A415EC214BB4D64AE064C92 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6F97A631B59ED0B54062A304 /* [CP] Copy Pods Resources */ = {
+		612C0CC286D97AF16F465722 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -456,7 +421,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		84262A86B83A05BFD2E77BB2 /* [CP] Check Pods Manifest.lock */ = {
+		65B5DF0B91EAD3F94201521F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,22 +436,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BBFE0877DD6A1AC40CD31FCB /* [CP] Embed Pods Frameworks */ = {
+		84F5E522A9368753B395E9A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F2F5B4B1079F9AFAE6B32697 /* [CP] Copy Pods Resources */ = {
+		B267477C474BAA336210D6CD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,6 +466,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E3158A7FF8D2E066FE18EF78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo/Pods-gimo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9705C2190FD5843B709CD0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F17CD0E7F485776B3677252F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo/Pods-gimo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -511,6 +521,8 @@
 				A4F783291E75F213008B43B5 /* ViewController.m in Sources */,
 				A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */,
 				A4F783231E75F213008B43B5 /* main.m in Sources */,
+				A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */,
+				A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,7 +669,7 @@
 		};
 		A4F7835A1E75F214008B43B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77DB87B87657D35369E44B6D /* Pods-gimo WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = 824CA21DB7D36B997B1A23DB /* Pods-gimo WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -674,7 +686,7 @@
 		};
 		A4F7835B1E75F214008B43B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B10621610420CBDA58287829 /* Pods-gimo WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = 6BA2B12ABE6CB45ACA3D097A /* Pods-gimo WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -691,7 +703,7 @@
 		};
 		A4F7835E1E75F214008B43B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8204670C575513A4973ABE69 /* Pods-gimo WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = B5B7A84D9AFA303F0C9ADF38 /* Pods-gimo WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -708,7 +720,7 @@
 		};
 		A4F7835F1E75F214008B43B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78B898FEEFC6DC2DB11D1A4C /* Pods-gimo WatchKit App.release.xcconfig */;
+			baseConfigurationReference = 7C75B3CF38E1EF4AF81EE6A3 /* Pods-gimo WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -725,7 +737,7 @@
 		};
 		A4F783621E75F214008B43B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9DA7059D106B2F3160D8483 /* Pods-gimo.debug.xcconfig */;
+			baseConfigurationReference = CD42F9917563C33953D74F84 /* Pods-gimo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -738,7 +750,7 @@
 		};
 		A4F783631E75F214008B43B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3B3CAA3EA4C09A965529AED /* Pods-gimo.release.xcconfig */;
+			baseConfigurationReference = C7361B34A57FDD19462637A1 /* Pods-gimo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -768,6 +780,7 @@
 				A4F7835B1E75F214008B43B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4F7835D1E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -776,6 +789,7 @@
 				A4F7835F1E75F214008B43B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4F783611E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo" */ = {
 			isa = XCConfigurationList;
@@ -784,6 +798,7 @@
 				A4F783631E75F214008B43B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

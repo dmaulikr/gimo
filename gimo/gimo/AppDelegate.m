@@ -9,10 +9,12 @@
 #import "AppDelegate.h"
 
 @import UIKit;
-@import Firebase;
+//@import Firebase;
 
 
 @interface AppDelegate ()
+
+//@property (strong, nonatomic) NSString *accessToken;
 
 @end
 
@@ -21,7 +23,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [FIRApp configure];
+//    [FIRApp configure];
+
+//    A0Lock *lock = [[MyApplication sharedInstance] lock];
+//    [lock applicationLaunchedWithOptions:launchOptions];
+
     return YES;
 }
 
