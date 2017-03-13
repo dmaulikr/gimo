@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Lock/Lock.h>
+#import "ProfileViewController.h"
 
 @import UIKit;
 //@import Firebase;
@@ -22,13 +24,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
 //    [FIRApp configure];
 
-//    A0Lock *lock = [[MyApplication sharedInstance] lock];
-//    [lock applicationLaunchedWithOptions:launchOptions];
+    A0Lock *lock = [[MyApplication sharedInstance] lock];
+    [lock applicationLaunchedWithOptions:launchOptions];
 
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    A0Lock *lock = [[MyApplication sharedInstance] lock];
+    return [lock handleURL:url sourceApplication:sourceApplication];
 }
 
 

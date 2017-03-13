@@ -9,9 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @class A0UserProfile;
+@class A0Lock;
 
 @interface ProfileViewController: UIViewController
 
 @property (nonatomic, strong) A0UserProfile *userProfile;
+
+@end
+
+@interface MyApplication : NSObject
+
+@property (readonly, nonatomic) A0Lock *lock;
++ (MyApplication *)sharedInstance;
 
 @end

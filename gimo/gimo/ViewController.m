@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *startBtn;
+
 @end
 
 @implementation ViewController
@@ -18,6 +20,7 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor yellowColor];
+    _startBtn.layer.cornerRadius = 20;
 }
 
 

@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor blackColor];
 
     self.navigationItem.hidesBackButton = YES;
     self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome, %@", self.userProfile.name];
@@ -35,6 +35,23 @@
 
 
 }
+
+@end
+
+
+@implementation MyApplication
++ (MyApplication*)sharedInstance {
+    static MyApplication *sharedApplication = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedApplication = [[self alloc] init];
+    });
+    return sharedApplication;
+}
+
+@end
+
+
 
 //- (void)didReceiveMemoryWarning {
 //    [super didReceiveMemoryWarning];
@@ -50,6 +67,3 @@
  // Pass the selected object to the new view controller.
  }
  */
-
-@end
-
