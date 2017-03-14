@@ -70,7 +70,8 @@
         <scene sceneID="ByK-D2-uHa">
             <objects>
                 <navigationController id="OuJ-eZ-I1s" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LcN-CZ-82o">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="LcN-CZ-82o">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -106,7 +107,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Identity made simple for Developers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOu-ej-ThS">
                                 <rect key="frame" x="50" y="356" width="275" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pv5-yd-U4K">
@@ -126,7 +127,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nOu-ej-ThS" firstAttribute="top" secondItem="O7i-Mk-MdO" secondAttribute="bottom" constant="8" id="5RU-TS-4pK"/>
                             <constraint firstItem="O7i-Mk-MdO" firstAttribute="top" secondItem="1SE-08-GHe" secondAttribute="bottom" constant="8" id="9AT-BR-RuD"/>
@@ -162,7 +163,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="badge" translatesAutoresizingMaskIntoConstraints="NO" id="kkw-qV-uxi">
-                                <rect key="frame" x="136" y="165" width="102" height="110"/>
+                                <rect key="frame" x="136" y="125" width="102" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="L9n-Cg-mp9"/>
                                     <constraint firstAttribute="width" secondItem="kkw-qV-uxi" secondAttribute="height" multiplier="51:55" id="sja-1n-bt5"/>
@@ -174,7 +175,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ez-xL-Ifw">
-                                <rect key="frame" x="111" y="481" width="153" height="21"/>
+                                <rect key="frame" x="89" y="476" width="197" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome, John Doe">
                                         <attributes>
@@ -187,14 +188,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-wV-mbg">
-                                <rect key="frame" x="67" y="313" width="240" height="128"/>
+                                <rect key="frame" x="67" y="285" width="240" height="168"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="QAd-dW-Bv3"/>
                                     <constraint firstAttribute="width" constant="240" id="bAM-t3-p12"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="6ez-xL-Ifw" secondAttribute="trailing" constant="20" id="0qL-0i-sgD"/>
                             <constraint firstItem="7Nn-wV-mbg" firstAttribute="centerY" secondItem="e8g-3e-0Z5" secondAttribute="centerY" id="CNj-0e-fxk"/>
@@ -215,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peS-Id-JHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="1645"/>
+            <point key="canvasLocation" x="2316" y="1644.8275862068967"/>
         </scene>
     </scenes>
     <resources>

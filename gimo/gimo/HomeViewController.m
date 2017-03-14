@@ -18,9 +18,11 @@
 
 - (IBAction)showLoginController:(id)sender {
     A0Lock *lock = [A0Lock sharedLock];
-    self.view.backgroundColor = [UIColor blackColor];
+//    self.view.backgroundColor = [UIColor blackColor];
 
     A0LockViewController *controller = [lock newLockViewController];
+//    self.view.backgroundColor = [UIColor blackColor];
+
     controller.onAuthenticationBlock = ^(A0UserProfile *profile, A0Token *token) {
         // Do something with token & profile. e.g.: save them.
         // And dismiss the ViewController

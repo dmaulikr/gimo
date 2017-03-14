@@ -23,8 +23,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
 
-    self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.hidesBackButton = NO;
+//    self.navigationController.view.backgroundColor = [UIColor blackColor];
+
     self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome, %@", self.userProfile.name];
+//    NSLog(@"%@", self.html_url);
 
     [[[NSURLSession sharedSession] dataTaskWithURL:self.userProfile.picture completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
