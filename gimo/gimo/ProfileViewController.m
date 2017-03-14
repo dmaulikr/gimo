@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) IBOutlet UIImageView *avatarImageView;
 @property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;
+@property(nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
 
 @end
 
@@ -24,10 +25,8 @@
     self.view.backgroundColor = [UIColor blackColor];
 
     self.navigationItem.hidesBackButton = NO;
-//    self.navigationController.view.backgroundColor = [UIColor blackColor];
 
     self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome, %@", self.userProfile.name];
-//    NSLog(@"%@", self.html_url);
 
     [[[NSURLSession sharedSession] dataTaskWithURL:self.userProfile.picture completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -37,6 +36,11 @@
     }] resume];
 
 
+}
+
+- (void)setRightBarButtonItem:(UIBarButtonItem *)item
+                     animated:(BOOL)animated; {
+    //
 }
 
 @end
