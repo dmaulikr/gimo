@@ -8,6 +8,7 @@ target 'gimo' do
   # Pods for gimo
   pod 'Lock', '~> 1.28'
   pod 'ChameleonFramework'
+  pod 'FlatUIKit'
 
 end
 

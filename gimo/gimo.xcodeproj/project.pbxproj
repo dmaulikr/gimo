@@ -11,6 +11,8 @@
 		430DF55B2E598DA6A0B11FE9 /* libPods-gimo WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF07249147E59F047005E86 /* libPods-gimo WatchKit Extension.a */; };
 		82CE0B0D4EBA0A8F197C0490 /* libPods-gimo WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77418811E187C7B5FA174A0D /* libPods-gimo WatchKit App.a */; };
 		A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */; };
+		A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */; };
+		A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA51E78C65A00A7F02E /* CoreText.framework */; };
 		A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEF71E76115900C21730 /* HomeViewController.m */; };
 		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
 		A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDEEFC1E7615BB00C21730 /* libLock.a */; };
@@ -81,6 +83,8 @@
 		5CF07249147E59F047005E86 /* libPods-gimo WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77418811E187C7B5FA174A0D /* libPods-gimo WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChameleonFramework.a; path = "Pods/../build/Debug-iphoneos/ChameleonFramework/libChameleonFramework.a"; sourceTree = "<group>"; };
+		A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlatUIKit.a; path = "Pods/../build/Debug-iphoneos/FlatUIKit/libFlatUIKit.a"; sourceTree = "<group>"; };
+		A40ECDA51E78C65A00A7F02E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		A4EDEEF61E76115900C21730 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A4EDEEF71E76115900C21730 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A4EDEEF91E76116900C21730 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */,
+				A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */,
 				A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */,
 				A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */,
 				1F8664460A8BB4A90EF86EF7 /* libPods-gimo.a in Frameworks */,
@@ -151,6 +157,8 @@
 		14020BB957098A8AC0D7A4F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A40ECDA51E78C65A00A7F02E /* CoreText.framework */,
+				A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */,
 				A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */,
 				A4EDEF001E77942100C21730 /* liblottie-ios.a */,
 				A4EDEEFC1E7615BB00C21730 /* libLock.a */,
@@ -759,6 +767,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -777,6 +786,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
