@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+//@import Chameleon;
 
 @interface ViewController : UIViewController
 

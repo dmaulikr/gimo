@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - Lock (1.28.1):
     - Lock/Core (= 1.28.1)
     - Lock/UI (= 1.28.1)
@@ -30,13 +33,15 @@ PODS:
   - Masonry (0.6.4)
 
 DEPENDENCIES:
+  - ChameleonFramework
   - Lock (~> 1.28)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Lock: 75874afed8380a46459dfb643cb93b3b6ffa59d9
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
 
-PODFILE CHECKSUM: d2f95aee815d906aa491bf56bbb06c93e84e81a9
+PODFILE CHECKSUM: 9ddbc7bd1d2f0fd433369610329a3de1449010fe
 
 COCOAPODS: 1.1.1

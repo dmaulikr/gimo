@@ -10,6 +10,7 @@
 		1F8664460A8BB4A90EF86EF7 /* libPods-gimo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FBACD359CAED5EC3FCA35B /* libPods-gimo.a */; };
 		430DF55B2E598DA6A0B11FE9 /* libPods-gimo WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF07249147E59F047005E86 /* libPods-gimo WatchKit Extension.a */; };
 		82CE0B0D4EBA0A8F197C0490 /* libPods-gimo WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77418811E187C7B5FA174A0D /* libPods-gimo WatchKit App.a */; };
+		A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */; };
 		A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEF71E76115900C21730 /* HomeViewController.m */; };
 		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
 		A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDEEFC1E7615BB00C21730 /* libLock.a */; };
@@ -79,6 +80,7 @@
 		4038585E2B675EB19A7CEE74 /* Pods-gimo WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		5CF07249147E59F047005E86 /* libPods-gimo WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77418811E187C7B5FA174A0D /* libPods-gimo WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChameleonFramework.a; path = "Pods/../build/Debug-iphoneos/ChameleonFramework/libChameleonFramework.a"; sourceTree = "<group>"; };
 		A4EDEEF61E76115900C21730 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A4EDEEF71E76115900C21730 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A4EDEEF91E76116900C21730 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */,
 				A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */,
 				1F8664460A8BB4A90EF86EF7 /* libPods-gimo.a in Frameworks */,
 			);
@@ -148,6 +151,7 @@
 		14020BB957098A8AC0D7A4F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */,
 				A4EDEF001E77942100C21730 /* liblottie-ios.a */,
 				A4EDEEFC1E7615BB00C21730 /* libLock.a */,
 				E7FBACD359CAED5EC3FCA35B /* libPods-gimo.a */,
@@ -754,6 +758,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -771,6 +776,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

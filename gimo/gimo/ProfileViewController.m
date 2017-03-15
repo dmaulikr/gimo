@@ -14,7 +14,6 @@
 
 @property (nonatomic, strong) IBOutlet UIImageView *avatarImageView;
 @property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;
-@property(nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
 
 @end
 
@@ -36,11 +35,6 @@
     }] resume];
 
 
-}
-
-- (void)setRightBarButtonItem:(UIBarButtonItem *)item
-                     animated:(BOOL)animated; {
-    //
 }
 
 @end

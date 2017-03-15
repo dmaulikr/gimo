@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <ChameleonFramework/Chameleon.h>
 
 @interface ViewController ()
 
@@ -19,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor yellowColor];
+//    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor flatYellowColor];
+//    self.view.backgroundColor = [UIColor colorWithRed:54./256. green:70./256. blue:93./256. alpha:1.];
     _startBtn.layer.cornerRadius = 20;
 }
 
