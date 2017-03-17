@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F8664460A8BB4A90EF86EF7 /* libPods-gimo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FBACD359CAED5EC3FCA35B /* libPods-gimo.a */; };
-		430DF55B2E598DA6A0B11FE9 /* libPods-gimo WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF07249147E59F047005E86 /* libPods-gimo WatchKit Extension.a */; };
-		82CE0B0D4EBA0A8F197C0490 /* libPods-gimo WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77418811E187C7B5FA174A0D /* libPods-gimo WatchKit App.a */; };
+		171975BBC489E0C2D5A1F552 /* libPods-gimo WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4A632B1CB1EEF5E778B862 /* libPods-gimo WatchKit App.a */; };
+		45C74AC16AFD2715B1017216 /* libPods-gimo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21AD82B3906DEC800863190 /* libPods-gimo.a */; };
 		A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */; };
 		A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */; };
 		A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA51E78C65A00A7F02E /* CoreText.framework */; };
+		A4132D9A1E7A92AF00196C43 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4132D7B1E7A92AF00196C43 /* YALSpringAnimation.m */; };
+		A4132D9B1E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = A4132D801E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		A4132D9C1E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = A4132D841E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		A4132D9D1E7A92AF00196C43 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A4132D871E7A92AF00196C43 /* YALAnimatingTabBarConstants.m */; };
+		A4132D9E1E7A92AF00196C43 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4132D8B1E7A92AF00196C43 /* YALFoldingTabBarController.m */; };
+		A4132D9F1E7A92AF00196C43 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A4132D8F1E7A92AF00196C43 /* YALTabBarItem.m */; };
+		A4132DA01E7A92AF00196C43 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4132D921E7A92AF00196C43 /* Info.plist */; };
+		A4132DA11E7A92AF00196C43 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A4132D961E7A92AF00196C43 /* YALCustomHeightTabBar.m */; };
+		A4132DA21E7A92AF00196C43 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A4132D991E7A92AF00196C43 /* YALFoldingTabBar.m */; };
+		A4AB21661E7A878A00265DAF /* YALChatDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AB21651E7A878A00265DAF /* YALChatDemoCollectionViewCell.m */; };
+		A4AB21751E7A87A100265DAF /* YALFirstTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AB216A1E7A87A100265DAF /* YALFirstTestViewController.m */; };
+		A4AB21761E7A87A100265DAF /* YALFourthTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AB216D1E7A87A100265DAF /* YALFourthTestViewController.m */; };
+		A4AB21771E7A87A100265DAF /* YALSecondTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AB21701E7A87A100265DAF /* YALSecondTestViewController.m */; };
+		A4AB21781E7A87A100265DAF /* YALChatDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4AB21721E7A87A100265DAF /* YALChatDemoList.plist */; };
+		A4AB21791E7A87A100265DAF /* YALThirdTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AB21741E7A87A100265DAF /* YALThirdTestViewController.m */; };
 		A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEF71E76115900C21730 /* HomeViewController.m */; };
 		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
 		A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDEEFC1E7615BB00C21730 /* libLock.a */; };
@@ -31,6 +45,7 @@
 		A4F783501E75F214008B43B5 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F7834F1E75F214008B43B5 /* ExtensionDelegate.m */; };
 		A4F783531E75F214008B43B5 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783521E75F214008B43B5 /* NotificationController.m */; };
 		A4F783551E75F214008B43B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F783541E75F214008B43B5 /* Assets.xcassets */; };
+		F854B205D0B1836AD22C08A6 /* libPods-gimo WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962348F1402BCDEE72A367A8 /* libPods-gimo WatchKit Extension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,15 +91,47 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F0337E6A05D4012BB29A65C /* Pods-gimo WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		22B13DBA3317C92819265E20 /* Pods-gimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.release.xcconfig"; sourceTree = "<group>"; };
-		36D58B61C3DA1A09881EFE11 /* Pods-gimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.debug.xcconfig"; sourceTree = "<group>"; };
-		4038585E2B675EB19A7CEE74 /* Pods-gimo WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		5CF07249147E59F047005E86 /* libPods-gimo WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77418811E187C7B5FA174A0D /* libPods-gimo WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0200DAC553797F1291D322BC /* Pods-gimo WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		0746196953051E47127B79DE /* Pods-gimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.debug.xcconfig"; sourceTree = "<group>"; };
+		52DA25A7104F117A2AD1671B /* Pods-gimo WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		962348F1402BCDEE72A367A8 /* libPods-gimo WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E011E6345CCC83E1A95D7CA /* Pods-gimo WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		A0FD6E3F5FE5449AFC3AE0E5 /* Pods-gimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.release.xcconfig"; sourceTree = "<group>"; };
+		A21AD82B3906DEC800863190 /* libPods-gimo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChameleonFramework.a; path = "Pods/../build/Debug-iphoneos/ChameleonFramework/libChameleonFramework.a"; sourceTree = "<group>"; };
 		A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlatUIKit.a; path = "Pods/../build/Debug-iphoneos/FlatUIKit/libFlatUIKit.a"; sourceTree = "<group>"; };
 		A40ECDA51E78C65A00A7F02E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		A4132D7A1E7A92AF00196C43 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		A4132D7B1E7A92AF00196C43 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		A4132D7F1E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		A4132D801E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		A4132D831E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		A4132D841E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		A4132D861E7A92AF00196C43 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		A4132D871E7A92AF00196C43 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		A4132D8A1E7A92AF00196C43 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		A4132D8B1E7A92AF00196C43 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		A4132D8E1E7A92AF00196C43 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		A4132D8F1E7A92AF00196C43 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		A4132D911E7A92AF00196C43 /* FoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBar.h; sourceTree = "<group>"; };
+		A4132D921E7A92AF00196C43 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4132D951E7A92AF00196C43 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
+		A4132D961E7A92AF00196C43 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		A4132D981E7A92AF00196C43 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		A4132D991E7A92AF00196C43 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+		A4AB20BC1E7A091000265DAF /* libFoldingTabBar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFoldingTabBar.a; path = "Pods/../build/Debug-iphoneos/FoldingTabBar/libFoldingTabBar.a"; sourceTree = "<group>"; };
+		A4AB20F31E7A497400265DAF /* libFoldingTabBar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFoldingTabBar.a; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/FoldingTabBar/libFoldingTabBar.a"; sourceTree = "<group>"; };
+		A4AB21641E7A878A00265DAF /* YALChatDemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALChatDemoCollectionViewCell.h; sourceTree = "<group>"; };
+		A4AB21651E7A878A00265DAF /* YALChatDemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALChatDemoCollectionViewCell.m; sourceTree = "<group>"; };
+		A4AB21691E7A87A100265DAF /* YALFirstTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFirstTestViewController.h; sourceTree = "<group>"; };
+		A4AB216A1E7A87A100265DAF /* YALFirstTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFirstTestViewController.m; sourceTree = "<group>"; };
+		A4AB216C1E7A87A100265DAF /* YALFourthTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFourthTestViewController.h; sourceTree = "<group>"; };
+		A4AB216D1E7A87A100265DAF /* YALFourthTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFourthTestViewController.m; sourceTree = "<group>"; };
+		A4AB216F1E7A87A100265DAF /* YALSecondTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSecondTestViewController.h; sourceTree = "<group>"; };
+		A4AB21701E7A87A100265DAF /* YALSecondTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSecondTestViewController.m; sourceTree = "<group>"; };
+		A4AB21721E7A87A100265DAF /* YALChatDemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YALChatDemoList.plist; sourceTree = "<group>"; };
+		A4AB21731E7A87A100265DAF /* YALThirdTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALThirdTestViewController.h; sourceTree = "<group>"; };
+		A4AB21741E7A87A100265DAF /* YALThirdTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALThirdTestViewController.m; sourceTree = "<group>"; };
 		A4EDEEF61E76115900C21730 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A4EDEEF71E76115900C21730 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A4EDEEF91E76116900C21730 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -117,9 +164,8 @@
 		A4F783521E75F214008B43B5 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		A4F783541E75F214008B43B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F783561E75F214008B43B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A822D0A3D8C4110A0B2080E1 /* Pods-gimo WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		DA26332B71C91D8BB2A38060 /* Pods-gimo WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		E7FBACD359CAED5EC3FCA35B /* libPods-gimo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E805E5D44F8CD39D1CF40A5C /* Pods-gimo WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		FF4A632B1CB1EEF5E778B862 /* libPods-gimo WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82CE0B0D4EBA0A8F197C0490 /* libPods-gimo WatchKit App.a in Frameworks */,
+				171975BBC489E0C2D5A1F552 /* libPods-gimo WatchKit App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +185,7 @@
 				A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */,
 				A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */,
 				A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */,
-				1F8664460A8BB4A90EF86EF7 /* libPods-gimo.a in Frameworks */,
+				45C74AC16AFD2715B1017216 /* libPods-gimo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430DF55B2E598DA6A0B11FE9 /* libPods-gimo WatchKit Extension.a in Frameworks */,
+				F854B205D0B1836AD22C08A6 /* libPods-gimo WatchKit Extension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,29 +203,236 @@
 		14020BB957098A8AC0D7A4F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4AB20F31E7A497400265DAF /* libFoldingTabBar.a */,
+				A4AB20BC1E7A091000265DAF /* libFoldingTabBar.a */,
 				A40ECDA51E78C65A00A7F02E /* CoreText.framework */,
 				A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */,
 				A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */,
 				A4EDEF001E77942100C21730 /* liblottie-ios.a */,
 				A4EDEEFC1E7615BB00C21730 /* libLock.a */,
-				E7FBACD359CAED5EC3FCA35B /* libPods-gimo.a */,
-				77418811E187C7B5FA174A0D /* libPods-gimo WatchKit App.a */,
-				5CF07249147E59F047005E86 /* libPods-gimo WatchKit Extension.a */,
+				A21AD82B3906DEC800863190 /* libPods-gimo.a */,
+				FF4A632B1CB1EEF5E778B862 /* libPods-gimo WatchKit App.a */,
+				962348F1402BCDEE72A367A8 /* libPods-gimo WatchKit Extension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7CAE3DE05058270AB9CD24D5 /* Pods */ = {
+		A4132D771E7A92AF00196C43 /* FoldingTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				36D58B61C3DA1A09881EFE11 /* Pods-gimo.debug.xcconfig */,
-				22B13DBA3317C92819265E20 /* Pods-gimo.release.xcconfig */,
-				DA26332B71C91D8BB2A38060 /* Pods-gimo WatchKit App.debug.xcconfig */,
-				4038585E2B675EB19A7CEE74 /* Pods-gimo WatchKit App.release.xcconfig */,
-				A822D0A3D8C4110A0B2080E1 /* Pods-gimo WatchKit Extension.debug.xcconfig */,
-				0F0337E6A05D4012BB29A65C /* Pods-gimo WatchKit Extension.release.xcconfig */,
+				A4132D781E7A92AF00196C43 /* Animation */,
+				A4132D7C1E7A92AF00196C43 /* Category */,
+				A4132D851E7A92AF00196C43 /* Constants */,
+				A4132D881E7A92AF00196C43 /* Controller */,
+				A4132D8C1E7A92AF00196C43 /* Model */,
+				A4132D901E7A92AF00196C43 /* Resources */,
+				A4132D931E7A92AF00196C43 /* View */,
 			);
-			name = Pods;
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		A4132D781E7A92AF00196C43 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D791E7A92AF00196C43 /* YALSpringAnimation */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		A4132D791E7A92AF00196C43 /* YALSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D7A1E7A92AF00196C43 /* YALSpringAnimation.h */,
+				A4132D7B1E7A92AF00196C43 /* YALSpringAnimation.m */,
+			);
+			path = YALSpringAnimation;
+			sourceTree = "<group>";
+		};
+		A4132D7C1E7A92AF00196C43 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D7D1E7A92AF00196C43 /* CAAnimation */,
+				A4132D811E7A92AF00196C43 /* CATransaction */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A4132D7D1E7A92AF00196C43 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D7E1E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		A4132D7E1E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D7F1E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations.h */,
+				A4132D801E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations.m */,
+			);
+			path = "CAAnimation+YALTabBarViewAnimations";
+			sourceTree = "<group>";
+		};
+		A4132D811E7A92AF00196C43 /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D821E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
+		A4132D821E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D831E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				A4132D841E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+			);
+			path = "CATransaction+TransactionWithAnimationsAndCompletion";
+			sourceTree = "<group>";
+		};
+		A4132D851E7A92AF00196C43 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D861E7A92AF00196C43 /* YALAnimatingTabBarConstants.h */,
+				A4132D871E7A92AF00196C43 /* YALAnimatingTabBarConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A4132D881E7A92AF00196C43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D891E7A92AF00196C43 /* FoldingTabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A4132D891E7A92AF00196C43 /* FoldingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D8A1E7A92AF00196C43 /* YALFoldingTabBarController.h */,
+				A4132D8B1E7A92AF00196C43 /* YALFoldingTabBarController.m */,
+			);
+			path = FoldingTabBarController;
+			sourceTree = "<group>";
+		};
+		A4132D8C1E7A92AF00196C43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D8D1E7A92AF00196C43 /* TabBarItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4132D8D1E7A92AF00196C43 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D8E1E7A92AF00196C43 /* YALTabBarItem.h */,
+				A4132D8F1E7A92AF00196C43 /* YALTabBarItem.m */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		A4132D901E7A92AF00196C43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D911E7A92AF00196C43 /* FoldingTabBar.h */,
+				A4132D921E7A92AF00196C43 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A4132D931E7A92AF00196C43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D941E7A92AF00196C43 /* CustomHeightTabBar */,
+				A4132D971E7A92AF00196C43 /* FoldingTabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4132D941E7A92AF00196C43 /* CustomHeightTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D951E7A92AF00196C43 /* YALCustomHeightTabBar.h */,
+				A4132D961E7A92AF00196C43 /* YALCustomHeightTabBar.m */,
+			);
+			path = CustomHeightTabBar;
+			sourceTree = "<group>";
+		};
+		A4132D971E7A92AF00196C43 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A4132D981E7A92AF00196C43 /* YALFoldingTabBar.h */,
+				A4132D991E7A92AF00196C43 /* YALFoldingTabBar.m */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		A4AB21621E7A878A00265DAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB21631E7A878A00265DAF /* ChatDemoCollectionViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4AB21631E7A878A00265DAF /* ChatDemoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB21641E7A878A00265DAF /* YALChatDemoCollectionViewCell.h */,
+				A4AB21651E7A878A00265DAF /* YALChatDemoCollectionViewCell.m */,
+			);
+			path = ChatDemoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A4AB21671E7A87A100265DAF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB21681E7A87A100265DAF /* YALFirstTestViewController */,
+				A4AB216B1E7A87A100265DAF /* YALFouthTestViewController */,
+				A4AB216E1E7A87A100265DAF /* YALSecondTestViewController */,
+				A4AB21711E7A87A100265DAF /* YALThirdTestViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A4AB21681E7A87A100265DAF /* YALFirstTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB21691E7A87A100265DAF /* YALFirstTestViewController.h */,
+				A4AB216A1E7A87A100265DAF /* YALFirstTestViewController.m */,
+			);
+			path = YALFirstTestViewController;
+			sourceTree = "<group>";
+		};
+		A4AB216B1E7A87A100265DAF /* YALFouthTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB216C1E7A87A100265DAF /* YALFourthTestViewController.h */,
+				A4AB216D1E7A87A100265DAF /* YALFourthTestViewController.m */,
+			);
+			path = YALFouthTestViewController;
+			sourceTree = "<group>";
+		};
+		A4AB216E1E7A87A100265DAF /* YALSecondTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB216F1E7A87A100265DAF /* YALSecondTestViewController.h */,
+				A4AB21701E7A87A100265DAF /* YALSecondTestViewController.m */,
+			);
+			path = YALSecondTestViewController;
+			sourceTree = "<group>";
+		};
+		A4AB21711E7A87A100265DAF /* YALThirdTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB21721E7A87A100265DAF /* YALChatDemoList.plist */,
+				A4AB21731E7A87A100265DAF /* YALThirdTestViewController.h */,
+				A4AB21741E7A87A100265DAF /* YALThirdTestViewController.m */,
+			);
+			path = YALThirdTestViewController;
 			sourceTree = "<group>";
 		};
 		A4F783151E75F213008B43B5 = {
@@ -190,7 +443,7 @@
 				A4F783481E75F214008B43B5 /* gimo WatchKit Extension */,
 				A4F7831F1E75F213008B43B5 /* Products */,
 				14020BB957098A8AC0D7A4F8 /* Frameworks */,
-				7CAE3DE05058270AB9CD24D5 /* Pods */,
+				D818B8F6D748CDC2711EC163 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +460,9 @@
 		A4F783201E75F213008B43B5 /* gimo */ = {
 			isa = PBXGroup;
 			children = (
+				A4AB21621E7A878A00265DAF /* View */,
+				A4AB21671E7A87A100265DAF /* ViewControllers */,
+				A4132D771E7A92AF00196C43 /* FoldingTabBar */,
 				A4EDEF021E77B51900C21730 /* DataViewController.h */,
 				A4EDEF031E77B51900C21730 /* DataViewController.m */,
 				A4EDEEF61E76115900C21730 /* HomeViewController.h */,
@@ -268,6 +524,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D818B8F6D748CDC2711EC163 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0746196953051E47127B79DE /* Pods-gimo.debug.xcconfig */,
+				A0FD6E3F5FE5449AFC3AE0E5 /* Pods-gimo.release.xcconfig */,
+				E805E5D44F8CD39D1CF40A5C /* Pods-gimo WatchKit App.debug.xcconfig */,
+				52DA25A7104F117A2AD1671B /* Pods-gimo WatchKit App.release.xcconfig */,
+				0200DAC553797F1291D322BC /* Pods-gimo WatchKit Extension.debug.xcconfig */,
+				9E011E6345CCC83E1A95D7CA /* Pods-gimo WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,13 +544,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F783611E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo" */;
 			buildPhases = (
-				E9499F54EA2FD8C11F2F882F /* [CP] Check Pods Manifest.lock */,
+				E72DFAD86125EA828257E218 /* [CP] Check Pods Manifest.lock */,
 				A4F7831A1E75F213008B43B5 /* Sources */,
 				A4F7831B1E75F213008B43B5 /* Frameworks */,
 				A4F7831C1E75F213008B43B5 /* Resources */,
 				A4F783601E75F214008B43B5 /* Embed Watch Content */,
-				B32CBD5DDCE0D3F0C6214DF4 /* [CP] Embed Pods Frameworks */,
-				89CB32FB1C872E061C210B75 /* [CP] Copy Pods Resources */,
+				65144CA38781BB0C9004823E /* [CP] Embed Pods Frameworks */,
+				D289D2BD8892F1D4BCBC8DCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,11 +566,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F7835D1E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit App" */;
 			buildPhases = (
-				D76AEC40038C8C590EEC7954 /* [CP] Check Pods Manifest.lock */,
+				B160C24D9E185C906AFE1E56 /* [CP] Check Pods Manifest.lock */,
 				A4F783331E75F213008B43B5 /* Resources */,
 				A4F7835C1E75F214008B43B5 /* Embed App Extensions */,
 				2883F1FF6D7AB9048D4760FE /* Frameworks */,
-				B0930ACFEE5795C8A97A1142 /* [CP] Copy Pods Resources */,
+				D979DFD5B3514DD697F2D80E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,12 +586,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F783591E75F214008B43B5 /* Build configuration list for PBXNativeTarget "gimo WatchKit Extension" */;
 			buildPhases = (
-				47022E1443F610F124E85722 /* [CP] Check Pods Manifest.lock */,
+				4C68999724ED1ACD3F798F7E /* [CP] Check Pods Manifest.lock */,
 				A4F783401E75F214008B43B5 /* Sources */,
 				A4F783411E75F214008B43B5 /* Frameworks */,
 				A4F783421E75F214008B43B5 /* Resources */,
-				F3C0933C7E3D1E0E7A8A8B79 /* [CP] Embed Pods Frameworks */,
-				40689003045E3B101A479894 /* [CP] Copy Pods Resources */,
+				FD8813B9C896E9D2664C50AC /* [CP] Embed Pods Frameworks */,
+				9961F6C4765CFC6D1897D4CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -386,6 +655,8 @@
 			files = (
 				A4F783311E75F213008B43B5 /* LaunchScreen.storyboard in Resources */,
 				A4F7832E1E75F213008B43B5 /* Assets.xcassets in Resources */,
+				A4AB21781E7A87A100265DAF /* YALChatDemoList.plist in Resources */,
+				A4132DA01E7A92AF00196C43 /* Info.plist in Resources */,
 				A4F7832C1E75F213008B43B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,22 +681,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		40689003045E3B101A479894 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		47022E1443F610F124E85722 /* [CP] Check Pods Manifest.lock */ = {
+		4C68999724ED1ACD3F798F7E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,37 +696,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		89CB32FB1C872E061C210B75 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo/Pods-gimo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0930ACFEE5795C8A97A1142 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B32CBD5DDCE0D3F0C6214DF4 /* [CP] Embed Pods Frameworks */ = {
+		65144CA38781BB0C9004823E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,7 +711,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo/Pods-gimo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D76AEC40038C8C590EEC7954 /* [CP] Check Pods Manifest.lock */ = {
+		9961F6C4765CFC6D1897D4CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo WatchKit Extension/Pods-gimo WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B160C24D9E185C906AFE1E56 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -500,7 +741,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E9499F54EA2FD8C11F2F882F /* [CP] Check Pods Manifest.lock */ = {
+		D289D2BD8892F1D4BCBC8DCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo/Pods-gimo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D979DFD5B3514DD697F2D80E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72DFAD86125EA828257E218 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -515,7 +786,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F3C0933C7E3D1E0E7A8A8B79 /* [CP] Embed Pods Frameworks */ = {
+		FD8813B9C896E9D2664C50AC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -537,11 +808,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4132D9E1E7A92AF00196C43 /* YALFoldingTabBarController.m in Sources */,
+				A4AB21661E7A878A00265DAF /* YALChatDemoCollectionViewCell.m in Sources */,
+				A4132DA11E7A92AF00196C43 /* YALCustomHeightTabBar.m in Sources */,
+				A4AB21771E7A87A100265DAF /* YALSecondTestViewController.m in Sources */,
 				A4F783291E75F213008B43B5 /* ViewController.m in Sources */,
+				A4AB21791E7A87A100265DAF /* YALThirdTestViewController.m in Sources */,
+				A4132D9A1E7A92AF00196C43 /* YALSpringAnimation.m in Sources */,
 				A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */,
 				A4F783231E75F213008B43B5 /* main.m in Sources */,
+				A4AB21751E7A87A100265DAF /* YALFirstTestViewController.m in Sources */,
+				A4132DA21E7A92AF00196C43 /* YALFoldingTabBar.m in Sources */,
+				A4132D9B1E7A92AF00196C43 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
 				A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */,
 				A4EDEF041E77B51900C21730 /* DataViewController.m in Sources */,
+				A4132D9F1E7A92AF00196C43 /* YALTabBarItem.m in Sources */,
+				A4AB21761E7A87A100265DAF /* YALFourthTestViewController.m in Sources */,
+				A4132D9C1E7A92AF00196C43 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				A4132D9D1E7A92AF00196C43 /* YALAnimatingTabBarConstants.m in Sources */,
 				A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,7 +886,7 @@
 		A4F783571E75F214008B43B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -639,9 +923,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-lz",
+					"$(inherited)",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -649,7 +939,7 @@
 		A4F783581E75F214008B43B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -680,8 +970,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-lz",
+					"$(inherited)",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -689,7 +985,7 @@
 		};
 		A4F7835A1E75F214008B43B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A822D0A3D8C4110A0B2080E1 /* Pods-gimo WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = 0200DAC553797F1291D322BC /* Pods-gimo WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -706,7 +1002,7 @@
 		};
 		A4F7835B1E75F214008B43B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F0337E6A05D4012BB29A65C /* Pods-gimo WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = 9E011E6345CCC83E1A95D7CA /* Pods-gimo WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -723,7 +1019,7 @@
 		};
 		A4F7835E1E75F214008B43B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA26332B71C91D8BB2A38060 /* Pods-gimo WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = E805E5D44F8CD39D1CF40A5C /* Pods-gimo WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -740,7 +1036,7 @@
 		};
 		A4F7835F1E75F214008B43B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4038585E2B675EB19A7CEE74 /* Pods-gimo WatchKit App.release.xcconfig */;
+			baseConfigurationReference = 52DA25A7104F117A2AD1671B /* Pods-gimo WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -757,10 +1053,12 @@
 		};
 		A4F783621E75F214008B43B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36D58B61C3DA1A09881EFE11 /* Pods-gimo.debug.xcconfig */;
+			baseConfigurationReference = 0746196953051E47127B79DE /* Pods-gimo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
+				ENABLE_TESTABILITY = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = gimo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -768,18 +1066,46 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FoldingTabBar",
+				);
+				OTHER_LDFLAGS = (
+					"-l\"AFNetworking\"",
+					"-l\"ChameleonFramework\"",
+					"-l\"FlatUIKit\"",
+					"-l\"Lock\"",
+					"-l\"Masonry\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		A4F783631E75F214008B43B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22B13DBA3317C92819265E20 /* Pods-gimo.release.xcconfig */;
+			baseConfigurationReference = A0FD6E3F5FE5449AFC3AE0E5 /* Pods-gimo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = gimo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -787,9 +1113,36 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FoldingTabBar",
+				);
+				OTHER_LDFLAGS = (
+					"-l\"AFNetworking\"",
+					"-l\"ChameleonFramework\"",
+					"-l\"FlatUIKit\"",
+					"-l\"Lock\"",
+					"-l\"Masonry\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

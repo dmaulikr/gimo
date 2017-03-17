@@ -18,10 +18,18 @@
 
 - (IBAction)showLoginController:(id)sender {
     A0Lock *lock = [A0Lock sharedLock];
-//    self.view.backgroundColor = [UIColor blackColor];
 
+
+
+    /**
+     2017-03-17 15:09:25.458759 gimo[13920:3923554] -[A0Lock newLockViewController]: unrecognized selector sent to instance 0x1742474d0
+     2017-03-17 15:09:25.459377 gimo[13920:3923554] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[A0Lock newLockViewController]: unrecognized selector sent to instance 0x1742474d0'
+     
+     
+     
+     Make sure you're properly retaining/releasing your view controller.
+     **/
     A0LockViewController *controller = [lock newLockViewController];
-//    self.view.backgroundColor = [UIColor blackColor];
 
     controller.onAuthenticationBlock = ^(A0UserProfile *profile, A0Token *token) {
         // Do something with token & profile. e.g.: save them.
