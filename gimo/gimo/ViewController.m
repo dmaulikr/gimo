@@ -12,6 +12,7 @@
 
 @interface ViewController ()
 
+
 @property (weak, nonatomic) IBOutlet FUIButton *startBtn;
 
 
@@ -22,15 +23,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    self.view.backgroundColor = [UIColor flatYellowColor];
+    self.view.backgroundColor = [UIColor flatYellowColor];
+    NSLog(@"--- self.view.backgroundColor shows! ---");
 
-    _startBtn.buttonColor = [UIColor flatBlackColorDark];
-    _startBtn.shadowColor = [UIColor flatPlumColor];
-    _startBtn.shadowHeight = 3.0f;
-    _startBtn.cornerRadius = 6.0f;
-    _startBtn.titleLabel.font = [UIFont boldFlatFontOfSize:16];
-    [_startBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
-    [_startBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+
+    self.startBtn.buttonColor = [UIColor flatBlackColorDark];
+    NSLog(@"--- self.startBtn.buttonColor shows! ---");
+
+    self.startBtn.shadowColor = [UIColor flatPlumColor];
+    self.startBtn.shadowHeight = 3.0f;
+    self.startBtn.cornerRadius = 6.0f;
+    self.startBtn.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [self.startBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [self.startBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
 }
 
 

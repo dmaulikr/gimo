@@ -1092,6 +1092,7 @@
 					"\"UIKit\"",
 					"-framework",
 					"\"WebKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1139,6 +1140,7 @@
 					"\"UIKit\"",
 					"-framework",
 					"\"WebKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

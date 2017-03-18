@@ -9,7 +9,13 @@
 #import "AppDelegate.h"
 
 #import <Lock/Lock.h>
+#import <ChameleonFramework/Chameleon.h>
+#import <FlatUIKit/FlatUIKit.h>
+
+#import "ViewController.h"
+#import "HomeViewController.h"
 #import "ProfileViewController.h"
+#import "DataViewController.h"
 
 #import "YALTabBarItem.h"
 #import "YALFoldingTabBarController.h"
@@ -30,17 +36,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+//    YALFoldingTabBarController *tabBarController = (YALFoldingTabBarController *) self.window.rootViewController;
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
+    // 1 show logo
+    ViewController *showVC = [[ViewController alloc]init];
+    [self.window setRootViewController:showVC];
+    [self.window makeKeyAndVisible];
+
+    // 2 prompt lock for login
     A0Lock *lock = [[MyApplication sharedInstance] lock];
     [lock applicationLaunchedWithOptions:launchOptions];
 
-    [self setupYALTabBarController];
+    // 3 home
+    
 
-    return YES;
-}
+    // 4 profile
 
 
-- (void)setupYALTabBarController {
-    YALFoldingTabBarController *tabBarController = (YALFoldingTabBarController *) self.window.rootViewController;
+    // 5 data
+
+
+    // 6 show tabbarcontroller
+    YALFoldingTabBarController *tabBarController = [[YALFoldingTabBarController alloc]init];
+
+
 
     //prepare leftBarItems
     YALTabBarItem *item1 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"nearby_icon"]
@@ -82,7 +102,57 @@
     tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
     tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
     tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
+
+    //    [self setupYALTabBarController];
+
+    return YES;
 }
+
+
+//- (void)setupYALTabBarController {
+//    YALFoldingTabBarController *tabBarController = (YALFoldingTabBarController *) self.window.rootViewController;
+//
+//    //prepare leftBarItems
+//    YALTabBarItem *item1 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"nearby_icon"]
+//                                                      leftItemImage:nil
+//                                                     rightItemImage:nil];
+//
+//
+//    YALTabBarItem *item2 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"profile_icon"]
+//                                                      leftItemImage:nil
+//                                                     rightItemImage:nil];
+//
+//    tabBarController.leftBarItems = @[item1, item2];
+//
+//    //prepare rightBarItems
+//    YALTabBarItem *item3 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"chats_icon"]
+//                                                      leftItemImage:nil
+//                                                     rightItemImage:nil];
+//
+//
+//    YALTabBarItem *item4 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"settings_icon"]
+//                                                      leftItemImage:nil
+//                                                     rightItemImage:nil];
+//
+//    YALTabBarItem *item5 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"settings_icon"]
+//                                                      leftItemImage:nil
+//                                                     rightItemImage:nil];
+//
+//    tabBarController.rightBarItems = @[item3, item4, item5];
+//
+//    tabBarController.centerButtonImage = [UIImage imageNamed:@"plus_icon"];
+//
+//    tabBarController.selectedIndex = 2;
+//
+//    //customize tabBarView
+//    tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight;
+//    tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
+//    tabBarController.tabBarView.backgroundColor = [UIColor colorWithRed:94.f/255.f green:91.f/255.f blue:149.f/255.f alpha:1.f];
+//    tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:72.f/255.f green:211.f/255.f blue:178.f/255.f alpha:1.f];
+//    tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
+//    tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
+//    tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
+//}
 
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
