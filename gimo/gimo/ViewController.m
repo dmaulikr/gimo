@@ -12,9 +12,7 @@
 
 @interface ViewController ()
 
-
 @property (weak, nonatomic) IBOutlet FUIButton *startBtn;
-
 
 @end
 

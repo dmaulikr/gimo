@@ -17,6 +17,11 @@
 #import "ProfileViewController.h"
 #import "DataViewController.h"
 
+#import "YALFirstTestViewController.h"
+#import "YALSecondTestViewController.h"
+#import "YALThirdTestViewController.h"
+#import "YALFourthTestViewController.h"
+
 #import "YALTabBarItem.h"
 #import "YALFoldingTabBarController.h"
 #import "YALAnimatingTabBarConstants.h"
@@ -36,29 +41,53 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-//    YALFoldingTabBarController *tabBarController = (YALFoldingTabBarController *) self.window.rootViewController;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
     // 1 show logo
     ViewController *showVC = [[ViewController alloc]init];
-    [self.window setRootViewController:showVC];
-    [self.window makeKeyAndVisible];
 
     // 2 prompt lock for login
     A0Lock *lock = [[MyApplication sharedInstance] lock];
     [lock applicationLaunchedWithOptions:launchOptions];
 
     // 3 home
-    
+    HomeViewController *homeVC = [[HomeViewController alloc]init];
+    homeVC.tabBarItem.title = @"Home";
 
     // 4 profile
-
+    ProfileViewController *profileVC = [[ProfileViewController alloc]init];
+    profileVC.tabBarItem.title = @"Profile";
 
     // 5 data
+    DataViewController *dataVC = [[DataViewController alloc]init];
+    dataVC.tabBarItem.title = @"Data";
 
+    // 6 first
+    YALFirstTestViewController *firstVC = [[YALFirstTestViewController alloc]init];
+    firstVC.tabBarItem.title = @"First";
 
-    // 6 show tabbarcontroller
+    // 7 second
+    YALSecondTestViewController *secondVC = [[YALSecondTestViewController alloc]init];
+    secondVC.tabBarItem.title = @"Second";
+
+    // 8 third
+    YALThirdTestViewController *thirdVC = [[YALThirdTestViewController alloc]init];
+    thirdVC.tabBarItem.title = @"Third";
+
+    // 9 fourth
+    YALFourthTestViewController *fourthVC = [[YALFourthTestViewController alloc]init];
+    fourthVC.tabBarItem.title = @"Fourth";
+
+    // 10 init tabbarcontroller
     YALFoldingTabBarController *tabBarController = [[YALFoldingTabBarController alloc]init];
+    self.tabBarController.viewControllers = @[firstVC,secondVC,thirdVC,fourthVC];
+
+//    YALFoldingTabBarController *tabBarController = (YALFoldingTabBarController *) self.window.rootViewController;
+
+
+    // start rootViewController
+    [self.window setRootViewController:showVC];
+    [self.window makeKeyAndVisible];
 
 
 
