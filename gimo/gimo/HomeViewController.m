@@ -9,12 +9,29 @@
 #import "HomeViewController.h"
 #import "ProfileViewController.h"
 #import <Lock/Lock.h>
+#import <ChameleonFramework/Chameleon.h>
+#import <FlatUIKit/FlatUIKit.h>
 
 @interface HomeViewController ()
+
+@property (strong, nonatomic) IBOutlet FUIButton *signinBtn;
 
 @end
 
 @implementation HomeViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.signinBtn.buttonColor = [UIColor flatPlumColorDark];
+    self.signinBtn.shadowColor = [UIColor flatPlumColor];
+    self.signinBtn.shadowHeight = 3.0f;
+    self.signinBtn.cornerRadius = 8.0f;
+    self.signinBtn.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [self.signinBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [self.signinBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+
+}
 
 - (IBAction)showLoginController:(id)sender {
     A0Lock *lock = [A0Lock sharedLock];
@@ -44,11 +61,8 @@
 
 
 
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//    // Do any additional setup after loading the view.
-//}
-//
+
+
 //- (void)didReceiveMemoryWarning {
 //    [super didReceiveMemoryWarning];
 //    // Dispose of any resources that can be recreated.

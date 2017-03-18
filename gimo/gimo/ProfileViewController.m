@@ -10,10 +10,14 @@
 #import <Lock/Lock.h>
 #import "ProfileViewController.h"
 
+#import <ChameleonFramework/Chameleon.h>
+#import <FlatUIKit/FlatUIKit.h>
+
 @interface ProfileViewController ()
 
 @property (nonatomic, strong) IBOutlet UIImageView *avatarImageView;
 @property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;
+@property (strong, nonatomic) IBOutlet FUIButton *nextBtn;
 
 @end
 
@@ -33,6 +37,14 @@
         });
 
     }] resume];
+
+    self.nextBtn.buttonColor = [UIColor flatPlumColorDark];
+    self.nextBtn.shadowColor = [UIColor flatPlumColor];
+    self.nextBtn.shadowHeight = 3.0f;
+    self.nextBtn.cornerRadius = 8.0f;
+    self.nextBtn.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [self.nextBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [self.nextBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
 
 
 }

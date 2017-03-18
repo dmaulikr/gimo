@@ -17,6 +17,8 @@
 		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
 		A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDEEFC1E7615BB00C21730 /* libLock.a */; };
 		A4EDEF041E77B51900C21730 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEF031E77B51900C21730 /* DataViewController.m */; };
+		A4F274B71E7CDF880042F3CF /* libUICountingLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */; };
+		A4F274BA1E7CDF9C0042F3CF /* StreakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */; };
 		A4F783231E75F213008B43B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783221E75F213008B43B5 /* main.m */; };
 		A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783251E75F213008B43B5 /* AppDelegate.m */; };
 		A4F783291E75F213008B43B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783281E75F213008B43B5 /* ViewController.m */; };
@@ -93,6 +95,9 @@
 		A4EDEF001E77942100C21730 /* liblottie-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblottie-ios.a"; path = "Pods/../build/Debug-iphoneos/lottie-ios/liblottie-ios.a"; sourceTree = "<group>"; };
 		A4EDEF021E77B51900C21730 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		A4EDEF031E77B51900C21730 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUICountingLabel.a; path = "Pods/../build/Debug-iphoneos/UICountingLabel/libUICountingLabel.a"; sourceTree = "<group>"; };
+		A4F274B81E7CDF9C0042F3CF /* StreakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreakViewController.h; sourceTree = "<group>"; };
+		A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreakViewController.m; sourceTree = "<group>"; };
 		A4F7831E1E75F213008B43B5 /* gimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F783221E75F213008B43B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4F783241E75F213008B43B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F274B71E7CDF880042F3CF /* libUICountingLabel.a in Frameworks */,
 				A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */,
 				A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */,
 				A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */,
@@ -157,6 +163,7 @@
 		14020BB957098A8AC0D7A4F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */,
 				A40ECDA51E78C65A00A7F02E /* CoreText.framework */,
 				A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */,
 				A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */,
@@ -209,6 +216,8 @@
 			children = (
 				A4EDEF021E77B51900C21730 /* DataViewController.h */,
 				A4EDEF031E77B51900C21730 /* DataViewController.m */,
+				A4F274B81E7CDF9C0042F3CF /* StreakViewController.h */,
+				A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */,
 				A4EDEEF61E76115900C21730 /* HomeViewController.h */,
 				A4EDEEF71E76115900C21730 /* HomeViewController.m */,
 				A4EDEEF91E76116900C21730 /* ProfileViewController.h */,
@@ -541,6 +550,7 @@
 				A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */,
 				A4F783231E75F213008B43B5 /* main.m in Sources */,
 				A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */,
+				A4F274BA1E7CDF9C0042F3CF /* StreakViewController.m in Sources */,
 				A4EDEF041E77B51900C21730 /* DataViewController.m in Sources */,
 				A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */,
 			);
@@ -768,6 +778,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UICountingLabel",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -787,6 +798,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UICountingLabel",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

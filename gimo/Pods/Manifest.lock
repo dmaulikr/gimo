@@ -32,11 +32,13 @@ PODS:
   - Lock/WebView (1.28.1):
     - Lock/CoreUI
   - Masonry (0.6.4)
+  - UICountingLabel (1.4.0)
 
 DEPENDENCIES:
   - ChameleonFramework
   - FlatUIKit
   - Lock (~> 1.28)
+  - UICountingLabel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -44,7 +46,8 @@ SPEC CHECKSUMS:
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   Lock: 75874afed8380a46459dfb643cb93b3b6ffa59d9
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b
 
-PODFILE CHECKSUM: 73a849576939f38dda69fafe82dd1cdfb9569c12
+PODFILE CHECKSUM: fb38752103600ec913519dc39a1e687bbc86d90d
 
 COCOAPODS: 1.1.1

@@ -109,13 +109,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pv5-yd-U4K">
-                                <rect key="frame" x="118" y="429" width="139" height="92"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pv5-yd-U4K" customClass="FUIButton">
+                                <rect key="frame" x="84" y="507" width="207" height="107"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Sign In">
                                             <attributes>
-                                                <font key="NSFont" size="35" name="ACaslonPro-Regular"/>
+                                                <font key="NSFont" size="26" name="ACaslonPro-Regular"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -140,6 +141,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qVy-Di-7ve"/>
                     <connections>
+                        <outlet property="signinBtn" destination="pv5-yd-U4K" id="jEJ-yX-Xhu"/>
                         <segue destination="mCt-ma-EtY" kind="show" identifier="ShowProfile" id="7Fi-Yz-gfh">
                             <nil key="action"/>
                         </segue>
@@ -176,7 +178,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ez-xL-Ifw">
                                 <rect key="frame" x="89" y="476" width="197" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Welcome, John Doe">
+                                    <fragment content="Welcome, Cyrus G.">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="18" name="ACaslonPro-Regular"/>
@@ -193,10 +195,10 @@
                                     <constraint firstAttribute="width" constant="240" id="bAM-t3-p12"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaw-63-ylD">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaw-63-ylD" customClass="FUIButton">
                                 <rect key="frame" x="147" y="602" width="81" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -220,6 +222,7 @@
                     </view>
                     <connections>
                         <outlet property="avatarImageView" destination="7Nn-wV-mbg" id="qPo-Jf-mjy"/>
+                        <outlet property="nextBtn" destination="qaw-63-ylD" id="7RY-H4-uAe"/>
                         <outlet property="welcomeLabel" destination="6ez-xL-Ifw" id="4jV-OJ-wRX"/>
                     </connections>
                 </viewController>
@@ -230,7 +233,7 @@
         <!--Item 2-->
         <scene sceneID="Rfw-JJ-FIQ">
             <objects>
-                <viewController id="Puu-Xm-i4Q" sceneMemberID="viewController">
+                <viewController id="Puu-Xm-i4Q" customClass="StreakViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X7M-NC-j6H"/>
                         <viewControllerLayoutGuide type="bottom" id="6eh-Id-U1E"/>
@@ -238,13 +241,38 @@
                     <view key="view" contentMode="scaleToFill" id="TiF-nm-Qla">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntt-d7-Plk" customClass="UICountingLabel">
+                                <rect key="frame" x="0.0" y="101" width="375" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="114"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySH-AL-bAA">
+                                <rect key="frame" x="162" y="101" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Streak">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="ACaslonPro-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="jaY-dS-RhJ"/>
+                    <connections>
+                        <outlet property="label" destination="ntt-d7-Plk" id="eKd-jn-iUT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Uk-iC-7pC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4277" y="1984"/>
+            <point key="canvasLocation" x="4276" y="1983.9580209895055"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="lsk-oL-6g7">

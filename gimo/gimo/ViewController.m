@@ -24,16 +24,14 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor flatYellowColor];
-//    self.view.backgroundColor = [UIColor colorWithRed:54./256. green:70./256. blue:93./256. alpha:1.];
 
-//    _startBtn.layer.cornerRadius = 20;
-    _startBtn.buttonColor = [UIColor flatBlackColorDark];
-    _startBtn.shadowColor = [UIColor flatPlumColor];
-    _startBtn.shadowHeight = 3.0f;
-    _startBtn.cornerRadius = 8.0f;
-    _startBtn.titleLabel.font = [UIFont boldFlatFontOfSize:16];
-    [_startBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
-    [_startBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    self.startBtn.buttonColor = [UIColor flatPlumColorDark];
+    self.startBtn.shadowColor = [UIColor flatPlumColor];
+    self.startBtn.shadowHeight = 3.0f;
+    self.startBtn.cornerRadius = 8.0f;
+    self.startBtn.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [self.startBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [self.startBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
 
 
 
