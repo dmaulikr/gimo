@@ -7,7 +7,7 @@
 //
 
 #import "EventsTableViewController.h"
-//#import <ChameleonFramework/Chameleon.h>
+#import <ChameleonFramework/Chameleon.h>
 
 @interface EventsTableViewController ()
 
@@ -59,6 +59,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"eventsList" forIndexPath:indexPath];
+
+    // change cell bg color
+    if ( indexPath.row % 2 == 0 )
+        cell.backgroundColor = [UIColor flatYellowColor];
+    else
+        cell.backgroundColor = [UIColor flatYellowColorDark];
 
     NSDictionary* events = self.events[indexPath.row];
     NSLog(@"%@",events);

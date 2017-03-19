@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+
     self.signinBtn.buttonColor = [UIColor flatPlumColorDark];
     self.signinBtn.shadowColor = [UIColor flatPlumColor];
     self.signinBtn.shadowHeight = 3.0f;

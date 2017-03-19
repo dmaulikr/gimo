@@ -28,7 +28,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
 
-    self.navigationItem.hidesBackButton = NO;
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    self.navigationItem.hidesBackButton = YES;
 
     self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome, %@", self.userProfile.name];
 

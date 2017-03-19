@@ -305,7 +305,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventsList" textLabel="guI-xY-Oqe" detailTextLabel="nsb-H1-fXk" style="IBUITableViewCellStyleSubtitle" id="Vz1-nf-gdY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventsList" textLabel="guI-xY-Oqe" detailTextLabel="nsb-H1-fXk" style="IBUITableViewCellStyleSubtitle" id="Vz1-nf-gdY">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vz1-nf-gdY" id="6e6-oP-MKD">
