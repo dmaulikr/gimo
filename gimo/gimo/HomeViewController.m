@@ -20,6 +20,7 @@
 
 @implementation HomeViewController
 
+#pragma mark - ViewController Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
 

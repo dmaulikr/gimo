@@ -19,6 +19,7 @@
 		A4EDEF041E77B51900C21730 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEF031E77B51900C21730 /* DataViewController.m */; };
 		A4F274B71E7CDF880042F3CF /* libUICountingLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */; };
 		A4F274BA1E7CDF9C0042F3CF /* StreakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */; };
+		A4F45E891E7E096F008EBA30 /* EventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F45E881E7E096F008EBA30 /* EventsTableViewController.m */; };
 		A4F783231E75F213008B43B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783221E75F213008B43B5 /* main.m */; };
 		A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783251E75F213008B43B5 /* AppDelegate.m */; };
 		A4F783291E75F213008B43B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783281E75F213008B43B5 /* ViewController.m */; };
@@ -98,6 +99,8 @@
 		A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUICountingLabel.a; path = "Pods/../build/Debug-iphoneos/UICountingLabel/libUICountingLabel.a"; sourceTree = "<group>"; };
 		A4F274B81E7CDF9C0042F3CF /* StreakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreakViewController.h; sourceTree = "<group>"; };
 		A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreakViewController.m; sourceTree = "<group>"; };
+		A4F45E871E7E096F008EBA30 /* EventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsTableViewController.h; sourceTree = "<group>"; };
+		A4F45E881E7E096F008EBA30 /* EventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsTableViewController.m; sourceTree = "<group>"; };
 		A4F7831E1E75F213008B43B5 /* gimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F783221E75F213008B43B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4F783241E75F213008B43B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 		A4F783201E75F213008B43B5 /* gimo */ = {
 			isa = PBXGroup;
 			children = (
+				A4F45E871E7E096F008EBA30 /* EventsTableViewController.h */,
+				A4F45E881E7E096F008EBA30 /* EventsTableViewController.m */,
 				A4EDEF021E77B51900C21730 /* DataViewController.h */,
 				A4EDEF031E77B51900C21730 /* DataViewController.m */,
 				A4F274B81E7CDF9C0042F3CF /* StreakViewController.h */,
@@ -548,6 +553,7 @@
 			files = (
 				A4F783291E75F213008B43B5 /* ViewController.m in Sources */,
 				A4F783261E75F213008B43B5 /* AppDelegate.m in Sources */,
+				A4F45E891E7E096F008EBA30 /* EventsTableViewController.m in Sources */,
 				A4F783231E75F213008B43B5 /* main.m in Sources */,
 				A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */,
 				A4F274BA1E7CDF9C0042F3CF /* StreakViewController.m in Sources */,

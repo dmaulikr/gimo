@@ -15,26 +15,28 @@
 
 @implementation DataViewController
 
-
+#pragma mark - ViewController Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     [self fetchData];
 }
 
+
+#pragma mark - Helpers
 - (void)fetchData {
-//    NSURL* url = [NSURL URLWithString:@"https://api.github.com/users/lovincyrus"];
-    NSURL* url = [NSURL URLWithString:@"https://api.github.com/users/lovincyrus/events"];
+    NSURL* url = [NSURL URLWithString:USER_EVENTS];
+
     NSData* data = [NSData dataWithContentsOfURL:url];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
-                                                           options:0
-                                                             error:NULL];
+                                                         options:0
+                                                           error:NULL];
 
     // show json
     NSLog(@"json: %@", json);
 
     // nested objects
-    NSArray *items = [json valueForKeyPath:@"repo.name"];
+    NSArray *items = [json valueForKeyPath:REPO_NAME];
     self.dataLabel.text = [items componentsJoinedByString:@"\n"];
 
     // test nested obj

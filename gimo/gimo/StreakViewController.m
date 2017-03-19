@@ -7,6 +7,7 @@
 //
 
 #import "StreakViewController.h"
+#import <ChameleonFramework/Chameleon.h>
 
 
 @interface StreakViewController ()
@@ -15,28 +16,67 @@
 
 @implementation StreakViewController
 
+
+#pragma mark - ViewController Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self fetchStats];
+
     // count up using a string that uses a number formatter
-//    UICountingLabel* scoreLabel = [[UICountingLabel alloc] initWithFrame:CGRectMake(10, 90, 200, 40)];
     [self.view addSubview:self.label];
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     formatter.numberStyle = kCFNumberFormatterDecimalStyle;
-    self.label.formatBlock = ^NSString* (CGFloat value)
-    {
+    self.label.formatBlock = ^NSString* (CGFloat value) {
         NSString* formatted = [formatter stringFromNumber:@((int)value)];
         return [NSString stringWithFormat:@"%@",formatted];
     };
     self.label.method = UILabelCountingMethodEaseOut;
     [self.label countFrom:0 to:10000 withDuration:2.5];
 
+    // set background color
+    self.view.backgroundColor = [UIColor flatYellowColor];
+
 }
+
+
+#pragma mark - Helpers
+- (void)fetchStats {
+    NSURL* url = [NSURL URLWithString:USER_STATS];
+    NSData* data = [NSData dataWithContentsOfURL:url];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
+                                                         options:0
+                                                           error:NULL];
+
+    // show json
+//    NSLog(@"json: %@", json);
+
+    // nested objects
+    NSArray *items = [json valueForKeyPath:@"weeks"];
+    NSArray *week = [json valueForKeyPath:@"weeks.w"];
+    NSArray *addition = [json valueForKeyPath:@"weeks.a"];
+    NSArray *deletion = [json valueForKeyPath:@"weeks.d"];
+    NSArray *commit = [json valueForKeyPath:@"weeks.c"];
+
+    // test nested obj
+    NSLog(@"%@", items);
+    NSLog(@"Start of the week: %@", week);
+    NSLog(@"Number of additions: %@", addition);
+    NSLog(@"Number of deletions: %@", deletion);
+    NSLog(@"Number of commits: %@", commit);
+
+//    NSArray *stats = @[week, addition, deletion, commit];
+
+
+    self.statsLabel.text = [items componentsJoinedByString:@"\n"];
+//    self.statsLabel.text = [stats componentsJoinedByString:@"\n"];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation
