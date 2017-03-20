@@ -11,7 +11,6 @@
 #import "ProfileViewController.h"
 
 @import UIKit;
-//@import Firebase;
 
 
 @interface AppDelegate ()
@@ -24,10 +23,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [FIRApp configure];
 
     A0Lock *lock = [[MyApplication sharedInstance] lock];
     [lock applicationLaunchedWithOptions:launchOptions];
+
+    [[UITabBar appearance] setTintColor:[UIColor blackColor]];
+//    [[UITabBar appearance] setBackgroundColor:[UIColor blackColor]];
 
     return YES;
 }

@@ -26,13 +26,18 @@
 #pragma mark - ViewController Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    // set background color
     self.view.backgroundColor = [UIColor blackColor];
 
+    // remove topNavBar and backBtn
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     self.navigationItem.hidesBackButton = YES;
 
+    // pass userProfile.name to welcomeLabel
     self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome, %@", self.userProfile.name];
 
+    // pass raw image data from userProfile.picture
     [[[NSURLSession sharedSession] dataTaskWithURL:self.userProfile.picture completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             self.avatarImageView.image = [UIImage imageWithData:data];
@@ -40,6 +45,7 @@
 
     }] resume];
 
+    // modify nextButton
     self.nextBtn.buttonColor = [UIColor flatPlumColorDark];
     self.nextBtn.shadowColor = [UIColor flatPlumColor];
     self.nextBtn.shadowHeight = 3.0f;
@@ -48,7 +54,11 @@
     [self.nextBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [self.nextBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
 
-
+    // store this shit
+    NSString *userName = [NSString stringWithFormat:@"%@", self.userProfile.name];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:userName forKey:@"userProfile"];
+    [defaults synchronize];
 }
 
 @end

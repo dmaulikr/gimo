@@ -21,8 +21,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self getStreaks];
     [self fetchStats];
 
+    // set background color
+    self.view.backgroundColor = [UIColor flatYellowColor];
+
+    // retrieve NSUserDefaults
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *savedValue = [defaults stringForKey:@"userProfile"];
+    NSLog(@"userName: %@", savedValue);
+}
+
+
+#pragma mark - Helpers
+- (void)getStreaks {
     // count up using a string that uses a number formatter
     [self.view addSubview:self.label];
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
@@ -33,14 +46,8 @@
     };
     self.label.method = UILabelCountingMethodEaseOut;
     [self.label countFrom:0 to:10000 withDuration:2.5];
-
-    // set background color
-    self.view.backgroundColor = [UIColor flatYellowColor];
-
 }
 
-
-#pragma mark - Helpers
 - (void)fetchStats {
     NSURL* url = [NSURL URLWithString:USER_STATS];
     NSData* data = [NSData dataWithContentsOfURL:url];

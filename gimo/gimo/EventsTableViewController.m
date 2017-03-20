@@ -62,9 +62,9 @@
 
     // change cell bg color
     if ( indexPath.row % 2 == 0 )
-        cell.backgroundColor = [UIColor flatYellowColor];
+        cell.backgroundColor = [UIColor clearColor];
     else
-        cell.backgroundColor = [UIColor flatYellowColorDark];
+        cell.backgroundColor = [UIColor clearColor];
 
     NSDictionary* events = self.events[indexPath.row];
     NSLog(@"%@",events);

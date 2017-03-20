@@ -24,8 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // remove topNavBar
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 
+    // modify signinBtn
     self.signinBtn.buttonColor = [UIColor flatPlumColorDark];
     self.signinBtn.shadowColor = [UIColor flatPlumColor];
     self.signinBtn.shadowHeight = 3.0f;
@@ -38,13 +40,14 @@
 
 - (IBAction)showLoginController:(id)sender {
     A0Lock *lock = [A0Lock sharedLock];
-//    self.view.backgroundColor = [UIColor blackColor];
 
     A0LockViewController *controller = [lock newLockViewController];
-//    self.view.backgroundColor = [UIColor blackColor];
 
     controller.onAuthenticationBlock = ^(A0UserProfile *profile, A0Token *token) {
-        // Do something with token & profile. e.g.: save them.
+        // Display the value of profile & token
+        NSLog(@"Profile: %@", profile);
+        NSLog(@"Token: %@", token);
+
         // And dismiss the ViewController
         [self dismissViewControllerAnimated:YES completion:nil];
         [self performSegueWithIdentifier:@"ShowProfile" sender:profile];
