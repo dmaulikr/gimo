@@ -43,6 +43,16 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
+    // reference this next time
+
+    /*
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.viewController = [[CTPViewController alloc] initWithNibName:@"CTPViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+    return YES;
+    */
+
     // 1 show logo
     ViewController *showVC = [[ViewController alloc]init];
 
