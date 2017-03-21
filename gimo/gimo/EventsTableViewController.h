@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FCAlertView.h"
 
 #define REPO_ID @"repo.id"
 #define REPO_URL @"repo.url"
 
 @interface EventsTableViewController : UITableViewController
+
+@property (retain, nonatomic) UIImage *alertImage;
 
 @end
