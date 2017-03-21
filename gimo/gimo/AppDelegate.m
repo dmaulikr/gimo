@@ -15,8 +15,6 @@
 
 @interface AppDelegate ()
 
-//@property (strong, nonatomic) NSString *accessToken;
-
 @end
 
 @implementation AppDelegate

@@ -71,8 +71,8 @@
 
     // *** DEBUG THIS SHIT ***
 
-//    cell.textLabel.text = [photo valueForKeyPath:REPO_ID];
-//    cell.detailTextLabel.text = [photo valueForKeyPath:REPO_URL];
+//    cell.textLabel.text = [events valueForKeyPath:REPO_ID];
+//    cell.detailTextLabel.text = [events valueForKeyPath:REPO_URL];
 
     cell.textLabel.text = @"repo.id";
     cell.detailTextLabel.text = @"repo.url";

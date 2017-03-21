@@ -31,7 +31,7 @@
     self.signinBtn.buttonColor = [UIColor flatPlumColorDark];
     self.signinBtn.shadowColor = [UIColor flatPlumColor];
     self.signinBtn.shadowHeight = 3.0f;
-    self.signinBtn.cornerRadius = 8.0f;
+    self.signinBtn.cornerRadius = 6.0f;
     self.signinBtn.titleLabel.font = [UIFont boldFlatFontOfSize:16];
     [self.signinBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [self.signinBtn setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
