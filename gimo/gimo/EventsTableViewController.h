@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FCAlertView.h"
 
+#define USER_EVENTS @"https://api.github.com/users/lovincyrus/events"
 #define REPO_ID @"repo.id"
 #define REPO_URL @"repo.url"
 

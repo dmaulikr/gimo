@@ -235,6 +235,7 @@
                     <connections>
                         <segue destination="X8w-si-HN3" kind="relationship" relationship="viewControllers" id="GCr-Vb-QMP"/>
                         <segue destination="Puu-Xm-i4Q" kind="relationship" relationship="viewControllers" id="7Q1-HW-22V"/>
+                        <segue destination="R1O-NH-BtX" kind="relationship" relationship="viewControllers" id="DjR-mT-9sX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJB-vl-5PH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -286,6 +287,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EP2-FP-Ftd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4276" y="1164"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Qb6-E2-PyA">
+            <objects>
+                <viewController id="R1O-NH-BtX" customClass="READMEViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3vz-Ik-HPn"/>
+                        <viewControllerLayoutGuide type="bottom" id="nD9-Rf-Wad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zgx-Pf-dKd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pL8-ck-V82">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9Q9-2A-MNO"/>
+                    <navigationItem key="navigationItem" id="L6E-3H-AiW"/>
+                    <connections>
+                        <outlet property="webView" destination="pL8-ck-V82" id="htD-x4-hve"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5x5-QH-hpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4276" y="2823"/>
         </scene>
     </scenes>
     <resources>

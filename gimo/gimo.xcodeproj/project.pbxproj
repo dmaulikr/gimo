@@ -13,6 +13,7 @@
 		A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */; };
 		A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA51E78C65A00A7F02E /* CoreText.framework */; };
 		A417660B1E80B42300B19407 /* libFCAlertView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A417660A1E80B42300B19407 /* libFCAlertView.a */; };
+		A41766111E80C8FF00B19407 /* READMEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41766101E80C8FF00B19407 /* READMEViewController.m */; };
 		A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEF71E76115900C21730 /* HomeViewController.m */; };
 		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
 		A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDEEFC1E7615BB00C21730 /* libLock.a */; };
@@ -87,6 +88,8 @@
 		A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlatUIKit.a; path = "Pods/../build/Debug-iphoneos/FlatUIKit/libFlatUIKit.a"; sourceTree = "<group>"; };
 		A40ECDA51E78C65A00A7F02E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		A417660A1E80B42300B19407 /* libFCAlertView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFCAlertView.a; path = "Pods/../build/Debug-iphoneos/FCAlertView/libFCAlertView.a"; sourceTree = "<group>"; };
+		A417660F1E80C8FF00B19407 /* READMEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = READMEViewController.h; sourceTree = "<group>"; };
+		A41766101E80C8FF00B19407 /* READMEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = READMEViewController.m; sourceTree = "<group>"; };
 		A4EDEEF61E76115900C21730 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A4EDEEF71E76115900C21730 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A4EDEEF91E76116900C21730 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 			children = (
 				A4F45E871E7E096F008EBA30 /* EventsTableViewController.h */,
 				A4F45E881E7E096F008EBA30 /* EventsTableViewController.m */,
+				A417660F1E80C8FF00B19407 /* READMEViewController.h */,
+				A41766101E80C8FF00B19407 /* READMEViewController.m */,
 				A4EDEF021E77B51900C21730 /* DataViewController.h */,
 				A4EDEF031E77B51900C21730 /* DataViewController.m */,
 				A4F274B81E7CDF9C0042F3CF /* StreakViewController.h */,
@@ -556,6 +561,7 @@
 				A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */,
 				A4F274BA1E7CDF9C0042F3CF /* StreakViewController.m in Sources */,
 				A4EDEF041E77B51900C21730 /* DataViewController.m in Sources */,
+				A41766111E80C8FF00B19407 /* READMEViewController.m in Sources */,
 				A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,7 +25,7 @@
     [self fetchStats];
 
     // set background color
-    self.view.backgroundColor = [UIColor flatYellowColor];
+//    self.view.backgroundColor = [UIColor flatYellowColor];
 //    self.view.backgroundColor = [UIColor clearColor];
 
     // retrieve NSUserDefaults

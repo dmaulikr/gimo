@@ -99,9 +99,10 @@
     return cell;
 }
 
+
 #pragma mark - Helpers
 - (void)loadEvents {
-    NSURL* url = [NSURL URLWithString:@"https://api.github.com/users/lovincyrus/events"];
+    NSURL* url = [NSURL URLWithString:USER_EVENTS];
 
     dispatch_queue_t fetchQ = dispatch_queue_create("Load events", NULL);
     dispatch_async(fetchQ, ^{
