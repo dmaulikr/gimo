@@ -24,6 +24,24 @@
 
     [self loadEvents];
 
+    // init FCAlertView
+    FCAlertView *alert = [[FCAlertView alloc] init];
+
+    // basic allert
+    [alert showAlertWithTitle:@"Summary"
+                 withSubtitle:@"You didn't push any code yesterday! 💀"
+              withCustomImage:[UIImage imageNamed:@"github-icon.png"]
+          withDoneButtonTitle:nil
+                   andButtons:nil];
+
+    // more customizations
+    alert.colorScheme = alert.flatMidnight;
+    alert.bounceAnimations = YES;
+    alert.animateAlertInFromTop = YES;
+    alert.animateAlertOutToBottom = YES;
+    alert.dismissOnOutsideTouch = NO;
+    alert.detachButtons = YES;
+
 //     Uncomment the following line to preserve selection between presentations.
 //     self.clearsSelectionOnViewWillAppear = NO;
 

@@ -10,6 +10,7 @@ target 'gimo' do
   pod 'ChameleonFramework'
   pod 'FlatUIKit'
   pod 'UICountingLabel'
+  pod 'FCAlertView'
 
 end
 

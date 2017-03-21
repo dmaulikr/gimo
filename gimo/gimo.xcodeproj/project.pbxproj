@@ -12,6 +12,7 @@
 		A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */; };
 		A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */; };
 		A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA51E78C65A00A7F02E /* CoreText.framework */; };
+		A417660B1E80B42300B19407 /* libFCAlertView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A417660A1E80B42300B19407 /* libFCAlertView.a */; };
 		A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEF71E76115900C21730 /* HomeViewController.m */; };
 		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
 		A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDEEFC1E7615BB00C21730 /* libLock.a */; };
@@ -85,6 +86,7 @@
 		A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChameleonFramework.a; path = "Pods/../build/Debug-iphoneos/ChameleonFramework/libChameleonFramework.a"; sourceTree = "<group>"; };
 		A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlatUIKit.a; path = "Pods/../build/Debug-iphoneos/FlatUIKit/libFlatUIKit.a"; sourceTree = "<group>"; };
 		A40ECDA51E78C65A00A7F02E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		A417660A1E80B42300B19407 /* libFCAlertView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFCAlertView.a; path = "Pods/../build/Debug-iphoneos/FCAlertView/libFCAlertView.a"; sourceTree = "<group>"; };
 		A4EDEEF61E76115900C21730 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A4EDEEF71E76115900C21730 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A4EDEEF91E76116900C21730 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A417660B1E80B42300B19407 /* libFCAlertView.a in Frameworks */,
 				A4F274B71E7CDF880042F3CF /* libUICountingLabel.a in Frameworks */,
 				A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */,
 				A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */,
@@ -163,6 +166,7 @@
 		14020BB957098A8AC0D7A4F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A417660A1E80B42300B19407 /* libFCAlertView.a */,
 				A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */,
 				A40ECDA51E78C65A00A7F02E /* CoreText.framework */,
 				A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */,
@@ -779,6 +783,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/UICountingLabel",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FCAlertView",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -799,6 +804,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ChameleonFramework",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/UICountingLabel",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FCAlertView",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
