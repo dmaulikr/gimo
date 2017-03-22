@@ -17,20 +17,21 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
-  - FCAlertView (1.2.9)
+  - FCAlertView (1.3.1)
   - FlatUIKit (1.6.2)
-  - Lock (1.28.1):
-    - Lock/Core (= 1.28.1)
-    - Lock/UI (= 1.28.1)
-    - Lock/WebView (= 1.28.1)
-  - Lock/Core (1.28.1):
+  - KAProgressLabel (3.3.2)
+  - Lock (1.28.2):
+    - Lock/Core (= 1.28.2)
+    - Lock/UI (= 1.28.2)
+    - Lock/WebView (= 1.28.2)
+  - Lock/Core (1.28.2):
     - AFNetworking (~> 3.0)
-  - Lock/CoreUI (1.28.1):
+  - Lock/CoreUI (1.28.2):
     - Lock/Core
     - Masonry (~> 0.6)
-  - Lock/UI (1.28.1):
+  - Lock/UI (1.28.2):
     - Lock/CoreUI
-  - Lock/WebView (1.28.1):
+  - Lock/WebView (1.28.2):
     - Lock/CoreUI
   - Masonry (0.6.4)
   - UICountingLabel (1.4.0)
@@ -39,18 +40,20 @@ DEPENDENCIES:
   - ChameleonFramework
   - FCAlertView
   - FlatUIKit
+  - KAProgressLabel
   - Lock (~> 1.28)
   - UICountingLabel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  FCAlertView: 60a6e16609d1458e16752f1918c2c43644c390ea
+  FCAlertView: 083c067bfd98f147abf5a66fe0e31cefac7bc809
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
-  Lock: 75874afed8380a46459dfb643cb93b3b6ffa59d9
+  KAProgressLabel: 95dd072d16bb483c0f58012d0e5466a334091af8
+  Lock: 742c21d94c8a1805a3fb8d7e8a5d5e873b14ec47
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b
 
-PODFILE CHECKSUM: 9168b6176d06c9863224ffd8a156e264719dfb6a
+PODFILE CHECKSUM: 56e0ea6863377670a2aba99f2c8f2bc8410c745a
 
 COCOAPODS: 1.1.1

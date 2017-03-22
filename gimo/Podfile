@@ -3,7 +3,8 @@
 
 target 'gimo' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+  # Enable to remove 'load designables'
+  use_frameworks!
 
   # Pods for gimo
   pod 'Lock', '~> 1.28'
@@ -11,6 +12,7 @@ target 'gimo' do
   pod 'FlatUIKit'
   pod 'UICountingLabel'
   pod 'FCAlertView'
+  pod 'KAProgressLabel'
 
 end
 

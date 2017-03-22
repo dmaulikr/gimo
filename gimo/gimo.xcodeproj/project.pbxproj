@@ -9,16 +9,22 @@
 /* Begin PBXBuildFile section */
 		310E1FEC7112F217D65AF566 /* libPods-gimo WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2951AD6ED4D142342B0FA7 /* libPods-gimo WatchKit Extension.a */; };
 		3329A336604CEB9ECBAD6512 /* libPods-gimo WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA032DF60E023E6C5723C08 /* libPods-gimo WatchKit App.a */; };
-		A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */; };
-		A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA31E78C35600A7F02E /* libFlatUIKit.a */; };
+		82509E7429E0B8CAAE314A54 /* Pods_gimo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C53C99CD118495A2150C0A /* Pods_gimo.framework */; };
 		A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECDA51E78C65A00A7F02E /* CoreText.framework */; };
-		A417660B1E80B42300B19407 /* libFCAlertView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A417660A1E80B42300B19407 /* libFCAlertView.a */; };
 		A41766111E80C8FF00B19407 /* READMEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41766101E80C8FF00B19407 /* READMEViewController.m */; };
+		A41766271E821AEA00B19407 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41766261E821AEA00B19407 /* CoreGraphics.framework */; };
+		A41766291E821AF200B19407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41766281E821AF200B19407 /* Foundation.framework */; };
+		A417662B1E821AFD00B19407 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A417662A1E821AFD00B19407 /* UIKit.framework */; };
+		A417662D1E821B0600B19407 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A417662C1E821B0600B19407 /* QuartzCore.framework */; };
+		A417662F1E821F0D00B19407 /* ChameleonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A417662E1E821F0D00B19407 /* ChameleonFramework.framework */; };
+		A41766311E821F1700B19407 /* FCAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41766301E821F1700B19407 /* FCAlertView.framework */; };
+		A41766331E821F2500B19407 /* UICountingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41766321E821F2500B19407 /* UICountingLabel.framework */; };
+		A41766351E821F2D00B19407 /* KAProgressLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41766341E821F2D00B19407 /* KAProgressLabel.framework */; };
+		A41766371E821F3500B19407 /* FlatUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41766361E821F3500B19407 /* FlatUIKit.framework */; };
+		A41766391E821F4000B19407 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41766381E821F4000B19407 /* Lock.framework */; };
 		A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEF71E76115900C21730 /* HomeViewController.m */; };
 		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
-		A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDEEFC1E7615BB00C21730 /* libLock.a */; };
 		A4EDEF041E77B51900C21730 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEF031E77B51900C21730 /* DataViewController.m */; };
-		A4F274B71E7CDF880042F3CF /* libUICountingLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */; };
 		A4F274BA1E7CDF9C0042F3CF /* StreakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */; };
 		A4F45E891E7E096F008EBA30 /* EventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F45E881E7E096F008EBA30 /* EventsTableViewController.m */; };
 		A4F783231E75F213008B43B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783221E75F213008B43B5 /* main.m */; };
@@ -34,7 +40,6 @@
 		A4F783501E75F214008B43B5 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F7834F1E75F214008B43B5 /* ExtensionDelegate.m */; };
 		A4F783531E75F214008B43B5 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783521E75F214008B43B5 /* NotificationController.m */; };
 		A4F783551E75F214008B43B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F783541E75F214008B43B5 /* Assets.xcassets */; };
-		E70ABC2CCCA21B356FF634EC /* libPods-gimo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F25455F590E62F76ADA180 /* libPods-gimo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,17 @@
 		A417660A1E80B42300B19407 /* libFCAlertView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFCAlertView.a; path = "Pods/../build/Debug-iphoneos/FCAlertView/libFCAlertView.a"; sourceTree = "<group>"; };
 		A417660F1E80C8FF00B19407 /* READMEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = READMEViewController.h; sourceTree = "<group>"; };
 		A41766101E80C8FF00B19407 /* READMEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = READMEViewController.m; sourceTree = "<group>"; };
+		A41766241E821AD600B19407 /* libKAProgressLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKAProgressLabel.a; path = "Pods/../build/Release-iphoneos/KAProgressLabel/libKAProgressLabel.a"; sourceTree = "<group>"; };
+		A41766261E821AEA00B19407 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A41766281E821AF200B19407 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A417662A1E821AFD00B19407 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A417662C1E821B0600B19407 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A417662E1E821F0D00B19407 /* ChameleonFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChameleonFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework"; sourceTree = "<group>"; };
+		A41766301E821F1700B19407 /* FCAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FCAlertView.framework; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/FCAlertView/FCAlertView.framework"; sourceTree = "<group>"; };
+		A41766321E821F2500B19407 /* UICountingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICountingLabel.framework; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/UICountingLabel/UICountingLabel.framework"; sourceTree = "<group>"; };
+		A41766341E821F2D00B19407 /* KAProgressLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KAProgressLabel.framework; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/KAProgressLabel/KAProgressLabel.framework"; sourceTree = "<group>"; };
+		A41766361E821F3500B19407 /* FlatUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlatUIKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/FlatUIKit/FlatUIKit.framework"; sourceTree = "<group>"; };
+		A41766381E821F4000B19407 /* Lock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lock.framework; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/Lock/Lock.framework"; sourceTree = "<group>"; };
 		A4EDEEF61E76115900C21730 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A4EDEEF71E76115900C21730 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A4EDEEF91E76116900C21730 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -125,7 +141,7 @@
 		A4F783521E75F214008B43B5 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		A4F783541E75F214008B43B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F783561E75F214008B43B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6F25455F590E62F76ADA180 /* libPods-gimo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C53C99CD118495A2150C0A /* Pods_gimo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gimo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9030AF3EB92D8C241E81D4 /* Pods-gimo WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo WatchKit App/Pods-gimo WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		CCA032DF60E023E6C5723C08 /* libPods-gimo WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gimo WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC160FC28108930B8C478BC3 /* Pods-gimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gimo/Pods-gimo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,13 +161,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A417660B1E80B42300B19407 /* libFCAlertView.a in Frameworks */,
-				A4F274B71E7CDF880042F3CF /* libUICountingLabel.a in Frameworks */,
+				A41766391E821F4000B19407 /* Lock.framework in Frameworks */,
+				A41766371E821F3500B19407 /* FlatUIKit.framework in Frameworks */,
+				A41766351E821F2D00B19407 /* KAProgressLabel.framework in Frameworks */,
+				A41766331E821F2500B19407 /* UICountingLabel.framework in Frameworks */,
+				A41766311E821F1700B19407 /* FCAlertView.framework in Frameworks */,
+				A417662F1E821F0D00B19407 /* ChameleonFramework.framework in Frameworks */,
+				A417662D1E821B0600B19407 /* QuartzCore.framework in Frameworks */,
+				A417662B1E821AFD00B19407 /* UIKit.framework in Frameworks */,
+				A41766291E821AF200B19407 /* Foundation.framework in Frameworks */,
+				A41766271E821AEA00B19407 /* CoreGraphics.framework in Frameworks */,
 				A40ECDA61E78C65A00A7F02E /* CoreText.framework in Frameworks */,
-				A40ECDA41E78C35600A7F02E /* libFlatUIKit.a in Frameworks */,
-				A40ECDA21E78BF7A00A7F02E /* libChameleonFramework.a in Frameworks */,
-				A4EDEEFE1E7618E100C21730 /* libLock.a in Frameworks */,
-				E70ABC2CCCA21B356FF634EC /* libPods-gimo.a in Frameworks */,
+				82509E7429E0B8CAAE314A54 /* Pods_gimo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +190,17 @@
 		14020BB957098A8AC0D7A4F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A41766381E821F4000B19407 /* Lock.framework */,
+				A41766361E821F3500B19407 /* FlatUIKit.framework */,
+				A41766341E821F2D00B19407 /* KAProgressLabel.framework */,
+				A41766321E821F2500B19407 /* UICountingLabel.framework */,
+				A41766301E821F1700B19407 /* FCAlertView.framework */,
+				A417662E1E821F0D00B19407 /* ChameleonFramework.framework */,
+				A417662C1E821B0600B19407 /* QuartzCore.framework */,
+				A417662A1E821AFD00B19407 /* UIKit.framework */,
+				A41766281E821AF200B19407 /* Foundation.framework */,
+				A41766261E821AEA00B19407 /* CoreGraphics.framework */,
+				A41766241E821AD600B19407 /* libKAProgressLabel.a */,
 				A417660A1E80B42300B19407 /* libFCAlertView.a */,
 				A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */,
 				A40ECDA51E78C65A00A7F02E /* CoreText.framework */,
@@ -176,9 +208,9 @@
 				A40ECDA11E78BF7A00A7F02E /* libChameleonFramework.a */,
 				A4EDEF001E77942100C21730 /* liblottie-ios.a */,
 				A4EDEEFC1E7615BB00C21730 /* libLock.a */,
-				C6F25455F590E62F76ADA180 /* libPods-gimo.a */,
 				CCA032DF60E023E6C5723C08 /* libPods-gimo WatchKit App.a */,
 				0C2951AD6ED4D142342B0FA7 /* libPods-gimo WatchKit Extension.a */,
+				B5C53C99CD118495A2150C0A /* Pods_gimo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -790,6 +822,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/UICountingLabel",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FCAlertView",
+					"$(PROJECT_DIR)/build/Release-iphoneos/KAProgressLabel",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -811,6 +844,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FlatUIKit",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/UICountingLabel",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/FCAlertView",
+					"$(PROJECT_DIR)/build/Release-iphoneos/KAProgressLabel",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CyrusGoh.gimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
