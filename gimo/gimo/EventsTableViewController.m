@@ -78,24 +78,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"eventsList" forIndexPath:indexPath];
 
-    // change cell bg color
+    // set cell bgColor
     if ( indexPath.row % 2 == 0 )
-        cell.backgroundColor = [UIColor clearColor];
+        // First Color
+        cell.backgroundColor = [UIColor blackColor];
     else
-        cell.backgroundColor = [UIColor clearColor];
+        // Second Color
+        cell.backgroundColor = [UIColor blackColor];
 
+    // change cell textColor
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor whiteColor];
+
+    // get events of "repo"
     NSDictionary* events = self.events[indexPath.row];
-    NSLog(@"%@",events);
-
-    // *** DEBUG THIS SHIT ***
-
-//    cell.textLabel.text = [events valueForKeyPath:REPO_ID];
-//    cell.detailTextLabel.text = [events valueForKeyPath:REPO_URL];
-
-    cell.textLabel.text = @"repo.id";
-    cell.detailTextLabel.text = @"repo.url";
-//    NSLog(@"textLabel");
-
+    cell.textLabel.text = [events valueForKeyPath:REPO_NAME];
+    cell.detailTextLabel.text = [events valueForKeyPath:REPO_URL];
     return cell;
 }
 
@@ -110,35 +108,19 @@
         NSDictionary* jsonData = [NSJSONSerialization JSONObjectWithData:data
                                                                  options:0
                                                                    error:NULL];
-        NSArray* events = [jsonData valueForKeyPath:@"repo.name"];
-        NSArray* events1 = [jsonData valueForKeyPath:@"repo.id"];
-        NSArray* events2 = [jsonData valueForKeyPath:@"repo.url"];
+        NSArray* events = [jsonData valueForKeyPath:@"repo"];
 
-        //        NSLog(@"%@",events);
-        NSLog(@"%@",events1);
-        NSLog(@"%@",events2);
+//        Uncomment this will show the list of events
+//        NSLog(@"%@",events);
 
         dispatch_async(dispatch_get_main_queue(), ^{
             self.events = events;
-            //            NSLog(@"self.events");
         });
     });
 }
 
 
 
-
-
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
 
 /*
 // Override to support conditional editing of the table view.

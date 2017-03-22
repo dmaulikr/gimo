@@ -17,6 +17,10 @@
 @property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel2;
 @property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel3;
 
+@property (nonatomic) float addNum;
+@property (nonatomic) float delNum;
+@property (nonatomic) float comNum;
+
 @end
 
 @implementation StreakViewController
@@ -26,13 +30,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self getStreaks]; // get github streak
-    [self fetchStats]; // get # of additions, deletions, commits
+    [self getStreaks];  // get github streak
+    [self fetchStats];  // get # of additions, deletions, commits
     [self getProgress]; // display on the progress label
 
     // set background color
-//    self.view.backgroundColor = [UIColor flatYellowColor];
-//    self.view.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor blackColor];
 
     // retrieve NSUserDefaults
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -40,8 +43,7 @@
     NSLog(@"userName: %@", savedValue);
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
     //    [self selectAnimate:nil];
@@ -49,13 +51,19 @@
     self.pLabel2.progress = 0;
     self.pLabel3.progress = 0;
 
+
+    // pass float num to the progress labels
+    _addNum = 223123;
+//    _delNum = 2;
+//    _comNum = 3;
+    NSLog(@"Right here! %f", _addNum);
+
     //    arc4random()
     // replace the score with real stats
     [self.pLabel1 setProgress:(20 % 100)*0.01 timing:TPPropertyAnimationTimingEaseInEaseOut duration:1 delay:.2];
     [self.pLabel2 setProgress:(40 % 100)*0.01 timing:TPPropertyAnimationTimingEaseInEaseOut duration:1 delay:.2];
     [self.pLabel3 setProgress:(80 % 100)*0.01 timing:TPPropertyAnimationTimingEaseInEaseOut duration:1 delay:.2];
 }
-
 
 #pragma mark - Helpers
 - (void)getProgress {
@@ -66,10 +74,11 @@
     self.pLabel1.trackColor = [[UIColor redColor] colorWithAlphaComponent:.2];
     self.pLabel1.progressColor = [UIColor redColor];
     self.pLabel1.labelVCBlock = ^(KAProgressLabel *label){
-        self.pLabel1.startLabel.text = @"D";
+    self.pLabel1.startLabel.text = @"D";
         //    self.pLabel1.startLabel.text = [NSString stringWithFormat:@"%.f",self.pLabel1.progress*100];
     };
-    self.pLabel1.isEndDegreeUserInteractive = YES;
+    self.pLabel1.isStartDegreeUserInteractive = NO;
+    self.pLabel1.isEndDegreeUserInteractive = NO; // user can't touch the progress
 
     self.pLabel2.backgroundColor = [UIColor clearColor];
     self.pLabel2.trackWidth = 22;
@@ -78,10 +87,12 @@
     self.pLabel2.trackColor = [[UIColor greenColor] colorWithAlphaComponent:.2];
     self.pLabel2.progressColor = [UIColor greenColor];
     self.pLabel2.labelVCBlock = ^(KAProgressLabel *label){
-        self.pLabel2.startLabel.text = @"A";
+    self.pLabel2.startLabel.text = @"A";
         //    self.pLabel2.startLabel.text = [NSString stringWithFormat:@"%.f",self.pLabel2.progress*100];
     };
-    [self.pLabel2 setIsEndDegreeUserInteractive:YES];
+    self.pLabel2.isStartDegreeUserInteractive = NO;
+    self.pLabel2.isEndDegreeUserInteractive = NO; // user can't touch the progress
+
 
     self.pLabel3.backgroundColor = [UIColor clearColor];
     self.pLabel3.trackWidth = 22;
@@ -91,10 +102,11 @@
     self.pLabel3.trackColor = [col colorWithAlphaComponent:.2];
     self.pLabel3.progressColor = col;
     self.pLabel3.labelVCBlock = ^(KAProgressLabel *label){
-        self.pLabel3.startLabel.text = @"C";
+    self.pLabel3.startLabel.text = @"C";
         //    self.pLabel3.startLabel.text = [NSString stringWithFormat:@"%.f",self.pLabel3.progress*100];
     };
-    self.pLabel3.isEndDegreeUserInteractive = YES;
+    self.pLabel3.isStartDegreeUserInteractive = NO;
+    self.pLabel3.isEndDegreeUserInteractive = NO; // user can't touch the progress
 
 }
 
@@ -109,6 +121,7 @@
     };
     self.label.method = UILabelCountingMethodEaseOut;
     [self.label countFrom:0 to:10000 withDuration:2.5];
+    self.label.textColor = [UIColor whiteColor]; // changed to white color for black bg
 }
 
 - (void)fetchStats {

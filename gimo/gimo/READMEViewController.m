@@ -17,10 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // NAV BAR SETTINGS
-    self.title = @"Readme";
+    // .upper() for readme title
+    self.title = @"README";
 
-    // WEBVIEW SETTINGS
+    // init webView
     self.webView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     NSString *urlString = @"https://github.com/lovincyrus/gimo/blob/master/README.md";
     NSURL *url = [NSURL URLWithString:urlString];

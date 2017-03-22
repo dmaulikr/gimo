@@ -10,8 +10,8 @@
 #import "FCAlertView.h"
 
 #define USER_EVENTS @"https://api.github.com/users/lovincyrus/events"
-#define REPO_ID @"repo.id"
-#define REPO_URL @"repo.url"
+#define REPO_NAME @"name"
+#define REPO_URL @"url"
 
 @interface EventsTableViewController : UITableViewController
 
