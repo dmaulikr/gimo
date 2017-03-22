@@ -7,4 +7,5 @@ pod 'ChameleonFramework'
 pod 'FlatUIKit'
 pod 'UICountingLabel'
 pod 'FCAlertView'
+pod 'KAProgressLabel'
 ```

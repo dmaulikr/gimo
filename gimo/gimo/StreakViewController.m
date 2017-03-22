@@ -66,6 +66,7 @@
     self.pLabel1.trackColor = [[UIColor redColor] colorWithAlphaComponent:.2];
     self.pLabel1.progressColor = [UIColor redColor];
     self.pLabel1.labelVCBlock = ^(KAProgressLabel *label){
+        self.pLabel1.startLabel.text = @"D";
         //    self.pLabel1.startLabel.text = [NSString stringWithFormat:@"%.f",self.pLabel1.progress*100];
     };
     self.pLabel1.isEndDegreeUserInteractive = YES;
@@ -77,6 +78,7 @@
     self.pLabel2.trackColor = [[UIColor greenColor] colorWithAlphaComponent:.2];
     self.pLabel2.progressColor = [UIColor greenColor];
     self.pLabel2.labelVCBlock = ^(KAProgressLabel *label){
+        self.pLabel2.startLabel.text = @"A";
         //    self.pLabel2.startLabel.text = [NSString stringWithFormat:@"%.f",self.pLabel2.progress*100];
     };
     [self.pLabel2 setIsEndDegreeUserInteractive:YES];
@@ -89,6 +91,7 @@
     self.pLabel3.trackColor = [col colorWithAlphaComponent:.2];
     self.pLabel3.progressColor = col;
     self.pLabel3.labelVCBlock = ^(KAProgressLabel *label){
+        self.pLabel3.startLabel.text = @"C";
         //    self.pLabel3.startLabel.text = [NSString stringWithFormat:@"%.f",self.pLabel3.progress*100];
     };
     self.pLabel3.isEndDegreeUserInteractive = YES;
