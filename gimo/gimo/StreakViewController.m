@@ -13,13 +13,15 @@
 
 @interface StreakViewController ()
 
-@property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel1;
-@property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel2;
-@property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel3;
+@property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel1; // commits progress
+@property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel2; // additions progress
+@property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel3; // deletions progress
 
-@property (nonatomic) float addNum;
-@property (nonatomic) float delNum;
-@property (nonatomic) float comNum;
+@property (strong, nonatomic) IBOutlet UILabel *dateLabel;     // date
+
+@property (nonatomic) float addNum;                            // additions #
+@property (nonatomic) float delNum;                            // deletions #
+@property (nonatomic) float comNum;                            // commits #
 
 @end
 
@@ -32,6 +34,7 @@
 
     [self getStreaks];  // get github streak
     [self fetchStats];  // get # of additions, deletions, commits
+
     [self getProgress]; // display on the progress label
 
     // set background color
@@ -45,6 +48,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+
+    [self getDate];     // get current date
 
     //    [self selectAnimate:nil];
     self.pLabel1.progress = 0;
@@ -66,6 +71,15 @@
 }
 
 #pragma mark - Helpers
+- (void)getDate {
+    NSLocale* currentLocale = [NSLocale currentLocale];
+    [[NSDate date] descriptionWithLocale:currentLocale];
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy HH:mm:ss"];
+    self.dateLabel.text = [dateFormatter stringFromDate:[NSDate date]];
+    self.dateLabel.textColor = [UIColor whiteColor];
+}
+
 - (void)getProgress {
     self.pLabel1.backgroundColor = [UIColor clearColor];
     self.pLabel1.trackWidth = 22;
