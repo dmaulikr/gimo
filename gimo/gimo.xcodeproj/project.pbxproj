@@ -24,7 +24,6 @@
 		A41766391E821F4000B19407 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41766381E821F4000B19407 /* Lock.framework */; };
 		A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEF71E76115900C21730 /* HomeViewController.m */; };
 		A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEEFA1E76116900C21730 /* ProfileViewController.m */; };
-		A4EDEF041E77B51900C21730 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDEF031E77B51900C21730 /* DataViewController.m */; };
 		A4F274BA1E7CDF9C0042F3CF /* StreakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */; };
 		A4F45E891E7E096F008EBA30 /* EventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F45E881E7E096F008EBA30 /* EventsTableViewController.m */; };
 		A4F783231E75F213008B43B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F783221E75F213008B43B5 /* main.m */; };
@@ -112,8 +111,6 @@
 		A4EDEEFA1E76116900C21730 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		A4EDEEFC1E7615BB00C21730 /* libLock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLock.a; path = "../../../../Library/Developer/Xcode/DerivedData/gimo-axmemqoiifbyuqdodnywgjpbqytv/Build/Products/Debug-iphoneos/Lock/libLock.a"; sourceTree = "<group>"; };
 		A4EDEF001E77942100C21730 /* liblottie-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblottie-ios.a"; path = "Pods/../build/Debug-iphoneos/lottie-ios/liblottie-ios.a"; sourceTree = "<group>"; };
-		A4EDEF021E77B51900C21730 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		A4EDEF031E77B51900C21730 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		A4F274B61E7CDF880042F3CF /* libUICountingLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUICountingLabel.a; path = "Pods/../build/Debug-iphoneos/UICountingLabel/libUICountingLabel.a"; sourceTree = "<group>"; };
 		A4F274B81E7CDF9C0042F3CF /* StreakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreakViewController.h; sourceTree = "<group>"; };
 		A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreakViewController.m; sourceTree = "<group>"; };
@@ -257,8 +254,6 @@
 				A4F45E881E7E096F008EBA30 /* EventsTableViewController.m */,
 				A417660F1E80C8FF00B19407 /* READMEViewController.h */,
 				A41766101E80C8FF00B19407 /* READMEViewController.m */,
-				A4EDEF021E77B51900C21730 /* DataViewController.h */,
-				A4EDEF031E77B51900C21730 /* DataViewController.m */,
 				A4F274B81E7CDF9C0042F3CF /* StreakViewController.h */,
 				A4F274B91E7CDF9C0042F3CF /* StreakViewController.m */,
 				A4EDEEF61E76115900C21730 /* HomeViewController.h */,
@@ -592,7 +587,6 @@
 				A4F783231E75F213008B43B5 /* main.m in Sources */,
 				A4EDEEF81E76115900C21730 /* HomeViewController.m in Sources */,
 				A4F274BA1E7CDF9C0042F3CF /* StreakViewController.m in Sources */,
-				A4EDEF041E77B51900C21730 /* DataViewController.m in Sources */,
 				A41766111E80C8FF00B19407 /* READMEViewController.m in Sources */,
 				A4EDEEFB1E76116900C21730 /* ProfileViewController.m in Sources */,
 			);

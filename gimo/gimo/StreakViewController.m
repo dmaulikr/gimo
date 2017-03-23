@@ -13,6 +13,9 @@
 
 @interface StreakViewController ()
 
+@property (strong, nonatomic) IBOutlet UILabel *streakLabel;
+@property (strong, nonatomic) IBOutlet UILabel *daysLabel;
+
 @property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel1; // commits progress
 @property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel2; // additions progress
 @property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel3; // deletions progress
@@ -32,13 +35,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self getStreaks];  // get github streak
-    [self fetchStats];  // get # of additions, deletions, commits
+    // get # of additions, deletions, commits
+    [self fetchStats];
 
-    [self getProgress]; // display on the progress label
+    // display on the progress label
+    [self getProgress];
 
-    // set background color
+    // set view bgColor
     self.view.backgroundColor = [UIColor blackColor];
+
+    // set streakLabel textColor
+    self.streakLabel.textColor = [UIColor whiteColor];
+
+    // set daysLabel textColor
+    self.daysLabel.textColor = [UIColor whiteColor];
 
     // retrieve NSUserDefaults
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -49,13 +59,12 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
+    [self getStreaks];  // get github streak
     [self getDate];     // get current date
 
-    //    [self selectAnimate:nil];
     self.pLabel1.progress = 0;
     self.pLabel2.progress = 0;
     self.pLabel3.progress = 0;
-
 
     // pass float num to the progress labels
     _addNum = 223123;
@@ -63,7 +72,7 @@
 //    _comNum = 3;
     NSLog(@"Right here! %f", _addNum);
 
-    //    arc4random()
+    // arc4random()
     // replace the score with real stats
     [self.pLabel1 setProgress:(20 % 100)*0.01 timing:TPPropertyAnimationTimingEaseInEaseOut duration:1 delay:.2];
     [self.pLabel2 setProgress:(40 % 100)*0.01 timing:TPPropertyAnimationTimingEaseInEaseOut duration:1 delay:.2];
@@ -71,6 +80,8 @@
 }
 
 #pragma mark - Helpers
+
+// Display current data and time
 - (void)getDate {
     NSLocale* currentLocale = [NSLocale currentLocale];
     [[NSDate date] descriptionWithLocale:currentLocale];
@@ -80,6 +91,7 @@
     self.dateLabel.textColor = [UIColor whiteColor];
 }
 
+// Activity Tracker with Github stats
 - (void)getProgress {
     self.pLabel1.backgroundColor = [UIColor clearColor];
     self.pLabel1.trackWidth = 22;
@@ -136,7 +148,7 @@
         return [NSString stringWithFormat:@"%@",formatted];
     };
     self.label.method = UILabelCountingMethodEaseOut;
-    [self.label countFrom:0 to:10000 withDuration:2.5];
+    [self.label countFrom:0 to:420 withDuration:2.5];
     self.label.textColor = [UIColor whiteColor]; // changed to white color for black bg
 }
 

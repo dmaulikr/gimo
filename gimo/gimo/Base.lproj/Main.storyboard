@@ -125,21 +125,8 @@
                                     <segue destination="iAZ-rh-cln" kind="show" id="Omg-Nc-jDS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ez-xL-Ifw">
-                                <rect key="frame" x="60" y="424" width="255" height="21"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Welcome, Sigmund Freud">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="18" name="Avenir-Roman"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-wV-mbg">
-                                <rect key="frame" x="67" y="170" width="240" height="199"/>
+                                <rect key="frame" x="67" y="170" width="241" height="199"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="199" id="cFa-8b-c5a"/>
                                 </constraints>
@@ -164,22 +151,37 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ez-xL-Ifw">
+                                <rect key="frame" x="67" y="425" width="241" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome, Sigmund Freud">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="Avenir-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qaw-63-ylD" firstAttribute="centerX" secondItem="6ez-xL-Ifw" secondAttribute="centerX" constant="-1.5" id="111-5R-h9f"/>
+                            <constraint firstItem="6ez-xL-Ifw" firstAttribute="top" secondItem="7Nn-wV-mbg" secondAttribute="bottom" constant="56" id="7Nq-yr-OWE"/>
                             <constraint firstItem="1bO-PE-vBc" firstAttribute="top" secondItem="kkw-qV-uxi" secondAttribute="top" id="CAj-po-mF2"/>
                             <constraint firstItem="qaw-63-ylD" firstAttribute="centerX" secondItem="1bO-PE-vBc" secondAttribute="centerX" constant="-1" id="Cz0-Vr-8AH"/>
-                            <constraint firstItem="6ez-xL-Ifw" firstAttribute="top" secondItem="7Nn-wV-mbg" secondAttribute="bottom" constant="55" id="Egw-6l-sEa"/>
                             <constraint firstItem="kkw-qV-uxi" firstAttribute="bottom" secondItem="1bO-PE-vBc" secondAttribute="bottom" id="Fy8-ST-m90"/>
                             <constraint firstItem="RVb-0R-21G" firstAttribute="top" secondItem="qaw-63-ylD" secondAttribute="bottom" constant="40" id="LDa-3b-hna"/>
                             <constraint firstItem="kkw-qV-uxi" firstAttribute="top" secondItem="03p-Oy-iJg" secondAttribute="bottom" constant="50" id="MPR-f6-RJp"/>
-                            <constraint firstItem="7Nn-wV-mbg" firstAttribute="centerX" secondItem="6ez-xL-Ifw" secondAttribute="centerX" id="NlC-0U-cKF"/>
+                            <constraint firstItem="6ez-xL-Ifw" firstAttribute="leading" secondItem="7Nn-wV-mbg" secondAttribute="leading" id="Pxm-lZ-DzU"/>
+                            <constraint firstItem="6ez-xL-Ifw" firstAttribute="trailing" secondItem="7Nn-wV-mbg" secondAttribute="trailing" id="VS5-QW-3z4"/>
                             <constraint firstItem="1bO-PE-vBc" firstAttribute="leading" secondItem="kkw-qV-uxi" secondAttribute="leading" id="Wp3-oG-GNd"/>
+                            <constraint firstItem="qaw-63-ylD" firstAttribute="top" secondItem="6ez-xL-Ifw" secondAttribute="bottom" constant="59" id="XgZ-xa-fOG"/>
                             <constraint firstItem="1bO-PE-vBc" firstAttribute="trailing" secondItem="kkw-qV-uxi" secondAttribute="trailing" id="bCE-Gp-0XS"/>
                             <constraint firstItem="7Nn-wV-mbg" firstAttribute="leading" secondItem="e8g-3e-0Z5" secondAttribute="leadingMargin" constant="51" id="gBy-jJ-dX4"/>
                             <constraint firstItem="kkw-qV-uxi" firstAttribute="leading" secondItem="e8g-3e-0Z5" secondAttribute="leading" constant="155" id="oMm-gK-2Ed"/>
                             <constraint firstItem="7Nn-wV-mbg" firstAttribute="top" secondItem="1bO-PE-vBc" secondAttribute="bottom" constant="56" id="rC6-f7-Wof"/>
+                            <constraint firstItem="6ez-xL-Ifw" firstAttribute="centerX" secondItem="kkw-qV-uxi" secondAttribute="centerX" id="vDm-ZS-vZt"/>
                         </constraints>
                     </view>
                     <connections>
@@ -192,7 +194,7 @@
             </objects>
             <point key="canvasLocation" x="2315.5" y="1644.5"/>
         </scene>
-        <!--Streak-->
+        <!--Stats-->
         <scene sceneID="Rfw-JJ-FIQ">
             <objects>
                 <viewController id="Puu-Xm-i4Q" customClass="StreakViewController" sceneMemberID="viewController">
@@ -204,12 +206,6 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntt-d7-Plk" customClass="UICountingLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="209"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="114"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6K-6B-MJZ">
                                 <rect key="frame" x="16" y="251" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -247,17 +243,51 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-GL-XvV">
+                                <rect key="frame" x="37" y="90" width="155" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="CURRENT STREAK">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntt-d7-Plk" customClass="UICountingLabel">
+                                <rect key="frame" x="189" y="35" width="186" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUj-wx-EHC">
+                                <rect key="frame" x="252" y="131" width="61" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Days">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Avenir-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Streak" id="JVT-sH-dMO"/>
+                    <navigationItem key="navigationItem" title="Stats" id="JVT-sH-dMO"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="dateLabel" destination="j6K-6B-MJZ" id="yYK-X9-0Ti"/>
+                        <outlet property="daysLabel" destination="JUj-wx-EHC" id="48s-i2-Akn"/>
                         <outlet property="label" destination="ntt-d7-Plk" id="eKd-jn-iUT"/>
                         <outlet property="pLabel1" destination="uiS-m2-wck" id="CYb-eR-80P"/>
                         <outlet property="pLabel2" destination="soZ-KP-WrE" id="b7f-gw-3TZ"/>
                         <outlet property="pLabel3" destination="qHi-yu-Geh" id="1pe-5v-gu4"/>
+                        <outlet property="streakLabel" destination="kDB-GL-XvV" id="M59-4r-Iqp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Uk-iC-7pC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -287,7 +317,7 @@
         <scene sceneID="j3V-PA-zsq">
             <objects>
                 <tableViewController id="X8w-si-HN3" customClass="EventsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="50" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XHc-Kt-CHT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XHc-Kt-CHT">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

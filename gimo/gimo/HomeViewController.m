@@ -41,6 +41,7 @@
 - (IBAction)showLoginController:(id)sender {
     A0Lock *lock = [A0Lock sharedLock];
 
+    // call LockVC for login
     A0LockViewController *controller = [lock newLockViewController];
 
     controller.onAuthenticationBlock = ^(A0UserProfile *profile, A0Token *token) {
@@ -57,6 +58,8 @@
 
 }
 
+// Segue: HomeVC -> ProfileVC
+// send userProfile
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"ShowProfile"]) {
         ProfileViewController *destViewController = segue.destinationViewController;

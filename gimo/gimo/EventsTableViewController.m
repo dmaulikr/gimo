@@ -22,25 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // get Github user's events
     [self loadEvents];
 
-    // init FCAlertView
-    FCAlertView *alert = [[FCAlertView alloc] init];
-
-    // basic allert
-    [alert showAlertWithTitle:@"Summary"
-                 withSubtitle:@"You didn't push any code yesterday! 💀"
-              withCustomImage:[UIImage imageNamed:@"github-icon.png"]
-          withDoneButtonTitle:nil
-                   andButtons:nil];
-
-    // more customizations
-    alert.colorScheme = alert.flatMidnight;
-    alert.bounceAnimations = YES;
-    alert.animateAlertInFromTop = YES;
-    alert.animateAlertOutToBottom = YES;
-    alert.dismissOnOutsideTouch = NO;
-    alert.detachButtons = YES;
+    // prompt summary using alert
+    [self getSummary];
 
 //     Uncomment the following line to preserve selection between presentations.
 //     self.clearsSelectionOnViewWillAppear = NO;
@@ -102,24 +88,50 @@
 - (void)loadEvents {
     NSURL* url = [NSURL URLWithString:USER_EVENTS];
 
+    // perform fetching events off the main queue
     dispatch_queue_t fetchQ = dispatch_queue_create("Load events", NULL);
     dispatch_async(fetchQ, ^{
+        // GET JSON data from URL
         NSData* data = [NSData dataWithContentsOfURL:url];
+        // Convert into Property list with objs and get NSDictionary
         NSDictionary* jsonData = [NSJSONSerialization JSONObjectWithData:data
                                                                  options:0
                                                                    error:NULL];
+
+        // search for objs name
         NSArray* events = [jsonData valueForKeyPath:@"repo"];
 
-//        Uncomment this will show the list of events
+//        Uncomment to show the list of events
 //        NSLog(@"%@",events);
 
+        // update self.events in the main queue
         dispatch_async(dispatch_get_main_queue(), ^{
             self.events = events;
         });
     });
 }
 
+- (void)getSummary {
 
+    // init FCAlertView
+    FCAlertView *alert = [[FCAlertView alloc] init];
+
+    // basic allert
+    [alert showAlertWithTitle:@"Summary"
+                 withSubtitle:@"You didn't push any code yesterday! 💀"
+              withCustomImage:[UIImage imageNamed:@"github-icon.png"]
+          withDoneButtonTitle:nil
+                   andButtons:nil];
+
+    // more customizations
+    alert.colorScheme = alert.flatMidnight;
+    alert.bounceAnimations = YES;
+    alert.blurBackground = YES;
+    alert.animateAlertInFromTop = YES;
+    alert.animateAlertOutToBottom = YES;
+    alert.dismissOnOutsideTouch = NO;
+    alert.detachButtons = YES;
+}
 
 
 /*
