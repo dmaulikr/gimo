@@ -125,8 +125,10 @@
 }
 
 - (void)getStreaks {
+
     // count up using a string that uses a number formatter
     [self.view addSubview:self.label];
+
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     formatter.numberStyle = kCFNumberFormatterDecimalStyle;
     self.label.formatBlock = ^NSString* (CGFloat value) {
@@ -162,11 +164,7 @@
     NSLog(@"Number of deletions: %@", deletion);
     NSLog(@"Number of commits: %@", commit);
 
-//    NSArray *stats = @[week, addition, deletion, commit];
-
-
     self.statsLabel.text = [items componentsJoinedByString:@"\n"];
-//    self.statsLabel.text = [stats componentsJoinedByString:@"\n"];
 }
 
 

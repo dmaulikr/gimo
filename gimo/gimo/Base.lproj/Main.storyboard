@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +15,7 @@
             <objects>
                 <navigationController id="OuJ-eZ-I1s" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="LcN-CZ-82o">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="LcN-CZ-82o">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -56,8 +57,8 @@
                                     <fragment content="Identity made simple for Developers">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="17" name="ACaslonPro-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="16" name="Avenir-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -85,6 +86,8 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qVy-Di-7ve"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="signinBtn" destination="pv5-yd-U4K" id="jEJ-yX-Xhu"/>
                         <segue destination="mCt-ma-EtY" kind="show" identifier="ShowProfile" id="7Fi-Yz-gfh">
@@ -108,23 +111,13 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ez-xL-Ifw">
-                                <rect key="frame" x="83" y="475" width="208" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Welcome, Sigmund Freud">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="18" name="ACaslonPro-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaw-63-ylD" customClass="FUIButton">
-                                <rect key="frame" x="147" y="602" width="81" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaw-63-ylD" customClass="FUIButton">
+                                <rect key="frame" x="99" y="505" width="174" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="3rk-co-HWS"/>
+                                    <constraint firstAttribute="width" constant="174" id="S1g-vc-YvK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -132,35 +125,62 @@
                                     <segue destination="iAZ-rh-cln" kind="show" id="Omg-Nc-jDS"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z4M-6s-34y">
-                                <rect key="frame" x="132" y="72" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ez-xL-Ifw">
+                                <rect key="frame" x="60" y="424" width="255" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome, Sigmund Freud">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="Avenir-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-wV-mbg">
+                                <rect key="frame" x="67" y="170" width="240" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="cFa-8b-c5a"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub-Mark-Light-120px-plus" translatesAutoresizingMaskIntoConstraints="NO" id="kkw-qV-uxi">
+                                <rect key="frame" x="155" y="50" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="fWA-Zc-E4r"/>
+                                    <constraint firstAttribute="height" constant="64" id="oSB-wx-12m"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-PE-vBc">
+                                <rect key="frame" x="155" y="50" width="64" height="64"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-PE-vBc">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z4M-6s-34y">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UfN-aZ-lKU">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="GitHub-Mark-Light-120px-plus" translatesAutoresizingMaskIntoConstraints="NO" id="kkw-qV-uxi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="RN7-aa-Q9Y"/>
-                                                            <constraint firstAttribute="width" constant="100" id="hsk-2K-5X6"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                </subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UfN-aZ-lKU">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-wV-mbg">
-                                <rect key="frame" x="72" y="234" width="240" height="199"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qaw-63-ylD" firstAttribute="centerX" secondItem="6ez-xL-Ifw" secondAttribute="centerX" constant="-1.5" id="111-5R-h9f"/>
+                            <constraint firstItem="1bO-PE-vBc" firstAttribute="top" secondItem="kkw-qV-uxi" secondAttribute="top" id="CAj-po-mF2"/>
+                            <constraint firstItem="qaw-63-ylD" firstAttribute="centerX" secondItem="1bO-PE-vBc" secondAttribute="centerX" constant="-1" id="Cz0-Vr-8AH"/>
+                            <constraint firstItem="6ez-xL-Ifw" firstAttribute="top" secondItem="7Nn-wV-mbg" secondAttribute="bottom" constant="55" id="Egw-6l-sEa"/>
+                            <constraint firstItem="kkw-qV-uxi" firstAttribute="bottom" secondItem="1bO-PE-vBc" secondAttribute="bottom" id="Fy8-ST-m90"/>
+                            <constraint firstItem="RVb-0R-21G" firstAttribute="top" secondItem="qaw-63-ylD" secondAttribute="bottom" constant="40" id="LDa-3b-hna"/>
+                            <constraint firstItem="kkw-qV-uxi" firstAttribute="top" secondItem="03p-Oy-iJg" secondAttribute="bottom" constant="50" id="MPR-f6-RJp"/>
+                            <constraint firstItem="7Nn-wV-mbg" firstAttribute="centerX" secondItem="6ez-xL-Ifw" secondAttribute="centerX" id="NlC-0U-cKF"/>
+                            <constraint firstItem="1bO-PE-vBc" firstAttribute="leading" secondItem="kkw-qV-uxi" secondAttribute="leading" id="Wp3-oG-GNd"/>
+                            <constraint firstItem="1bO-PE-vBc" firstAttribute="trailing" secondItem="kkw-qV-uxi" secondAttribute="trailing" id="bCE-Gp-0XS"/>
+                            <constraint firstItem="7Nn-wV-mbg" firstAttribute="leading" secondItem="e8g-3e-0Z5" secondAttribute="leadingMargin" constant="51" id="gBy-jJ-dX4"/>
+                            <constraint firstItem="kkw-qV-uxi" firstAttribute="leading" secondItem="e8g-3e-0Z5" secondAttribute="leading" constant="155" id="oMm-gK-2Ed"/>
+                            <constraint firstItem="7Nn-wV-mbg" firstAttribute="top" secondItem="1bO-PE-vBc" secondAttribute="bottom" constant="56" id="rC6-f7-Wof"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="avatarImageView" destination="7Nn-wV-mbg" id="qPo-Jf-mjy"/>
@@ -170,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peS-Id-JHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="1644.8275862068967"/>
+            <point key="canvasLocation" x="2315.5" y="1644.5"/>
         </scene>
         <!--Streak-->
         <scene sceneID="Rfw-JJ-FIQ">
@@ -308,6 +328,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="dZG-JU-Ye0"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="YhJ-ft-pqQ">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -339,13 +361,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="README" id="L6E-3H-AiW"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="webView" destination="pL8-ck-V82" id="htD-x4-hve"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5x5-QH-hpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5215.1999999999998" y="2822.3388305847079"/>
+            <point key="canvasLocation" x="5214.5" y="2821.5"/>
         </scene>
         <!--Events-->
         <scene sceneID="fBL-wU-PLS">
@@ -354,7 +378,7 @@
                     <tabBarItem key="tabBarItem" title="Events" image="chats_icon" id="Kwh-8z-vuW"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="KLS-Xq-PaZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="KLS-Xq-PaZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -367,14 +391,14 @@
             </objects>
             <point key="canvasLocation" x="4276" y="1163.568215892054"/>
         </scene>
-        <!--Statistics-->
+        <!--Stats-->
         <scene sceneID="Q0s-6q-Cz4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5RS-CV-HBh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Statistics" image="profile_icon" id="jaY-dS-RhJ"/>
+                    <tabBarItem key="tabBarItem" title="Stats" image="profile_icon" id="jaY-dS-RhJ"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="mic-wF-lTm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="mic-wF-lTm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -394,7 +418,7 @@
                     <tabBarItem key="tabBarItem" title="README" image="settings_icon" id="9Q9-2A-MNO"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="83n-9R-xwi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="83n-9R-xwi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
