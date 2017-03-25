@@ -1,5 +1,7 @@
 # gimo
 
+![sample](gimo.png)
+
 ## Pod Used
 ```
 pod 'Lock', '~> 1.28'
